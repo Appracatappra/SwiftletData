@@ -16,7 +16,7 @@ Created by developers, for developers. Appracatappra's controls are designed to 
 **Swift Package Manager** (Xcode 11 and above)
 
 1. Select **File** > **Swift Packages** > **Add Package Dependency…** from the **File** menu.
-2. Paste `https://github.com/Appracatappra/SwiftletUtilities.git` in the dialog box.
+2. Paste `https://github.com/Appracatappra/SwiftletData.git` in the dialog box.
 3. Follow the Xcode's instruction to complete the installation.
 
 > Why not CocoaPods, or Carthage, or blank?
