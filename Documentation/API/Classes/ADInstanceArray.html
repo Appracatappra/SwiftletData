@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ADInstanceArray Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ADInstanceArray" class="dashAnchor"></a>
+    <a title="ADInstanceArray Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SwiftletData Docs</a> (83% documented)</p>
+        <p class="header-right"><a href="dash-feed://http%3A%2F%2Fappracatappra.com%2Fapi%2Fdocsets%2FSwiftletData.xml"><img src="../img/dash.png"/>Install in Dash</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SwiftletData Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ADInstanceArray Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ADColumnSchema.html">ADColumnSchema</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADDataStore.html">ADDataStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADInstanceArray.html">ADInstanceArray</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADInstanceDictionary.html">ADInstanceDictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONDecoder.html">ADSPONDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONDecoder/DateDecodingStrategy.html">– DateDecodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONDecoder/DataDecodingStrategy.html">– DataDecodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONEncoder.html">ADSPONEncoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONEncoder/DateEncodingStrategy.html">– DateEncodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONEncoder/DataEncodingStrategy.html">– DataEncodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONProvider.html">ADSPONProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLBetweenExpression.html">ADSQLBetweenExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLBinaryExpression.html">ADSQLBinaryExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLBinaryExpression/BinaryOperation.html">– BinaryOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLCaseExpression.html">ADSQLCaseExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLDecoder.html">ADSQLDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLDecoder/DateDecodingStrategy.html">– DateDecodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLDecoder/DataDecodingStrategy.html">– DataDecodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLEncoder.html">ADSQLEncoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLEncoder/DateEncodingStrategy.html">– DateEncodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLEncoder/DataEncodingStrategy.html">– DataEncodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLExpressionBuilder.html">ADSQLExpressionBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLForeignKeyExpression.html">ADSQLForeignKeyExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLForeignKeyExpression/OnModify.html">– OnModify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLForeignKeyExpression/ModifyAction.html">– ModifyAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLFunctionExpression.html">ADSQLFunctionExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLInExpression.html">ADSQLInExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLJoinClause.html">ADSQLJoinClause</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLJoinClause/JoinType.html">– JoinType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLLiteralExpression.html">ADSQLLiteralExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLParser.html">ADSQLParser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLUnaryExpression.html">ADSQLUnaryExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLUnaryExpression/UnaryOperation.html">– UnaryOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLWhenExpression.html">ADSQLWhenExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLiteProvider.html">ADSQLiteProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADTableSchema.html">ADTableSchema</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADTableStore.html">ADTableStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADUtilities.html">ADUtilities</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADUtilities/Comparison.html">– Comparison</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADUtilities/Operation.html">– Operation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADiCloudProvider.html">ADiCloudProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:12SwiftletData11SQLITE_DATEs5Int32Vvp">SQLITE_DATE</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ADDataProviderError.html">ADDataProviderError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADDataTableKeyType.html">ADDataTableKeyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLColumnType.html">ADSQLColumnType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLConflictHandling.html">ADSQLConflictHandling</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLExecutionError.html">ADSQLExecutionError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLFunction.html">ADSQLFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLKeyword.html">ADSQLKeyword</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLParseError.html">ADSQLParseError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADiCloudDatabaseType.html">ADiCloudDatabaseType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ADDataCrossReference.html">ADDataCrossReference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ADDataProvider.html">ADDataProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ADDataTable.html">ADDataTable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ADSQLExpression.html">ADSQLExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:12SwiftletData16ADSQLInstructionP">ADSQLInstruction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ADCrossReference.html">ADCrossReference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLAlterTableInstruction.html">ADSQLAlterTableInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLColumnConstraint.html">ADSQLColumnConstraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLColumnConstraint/ColumnConstraintType.html">– ColumnConstraintType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLColumnDefinition.html">ADSQLColumnDefinition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateIndexInstruction.html">ADSQLCreateIndexInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateTableInstruction.html">ADSQLCreateTableInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateTriggerInstruction.html">ADSQLCreateTriggerInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateTriggerInstruction/WhenToTrigger.html">– WhenToTrigger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateTriggerInstruction/TriggerType.html">– TriggerType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateViewInstruction.html">ADSQLCreateViewInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLDeleteInstruction.html">ADSQLDeleteInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLDropInstruction.html">ADSQLDropInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLDropInstruction/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLInsertInstruction.html">ADSQLInsertInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLInsertInstruction/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLOrderByClause.html">ADSQLOrderByClause</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLOrderByClause/Order.html">– Order</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLResultColumn.html">ADSQLResultColumn</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLSelectInstruction.html">ADSQLSelectInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLSetClause.html">ADSQLSetClause</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLTableConstraint.html">ADSQLTableConstraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLTableConstraint/TableConstraintType.html">– TableConstraintType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLTransactionInstruction.html">ADSQLTransactionInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLTransactionInstruction/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLUpdateInstruction.html">ADSQLUpdateInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLUpdateInstruction/Action.html">– Action</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12SwiftletData8ADRecorda">ADRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12SwiftletData11ADRecordSeta">ADRecordSet</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ADInstanceArray</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ADInstanceArray</span></code></pre>
+
+                </div>
+              </div>
+            <p>Defines a passable array of values used as temporary storage when encoding or decoding an Action Data class. <code>ADInstanceArray</code> also introduces support for the new <strong>Swift Portable Object Notation</strong> (SPON) data format that allows complex data models to be encoded in a portable text string that encodes not only property keys and data, but also includes type information about the encoded data. For example:</p>
+<h2 id='example' class='heading'>Example:</h2>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="s">"@array[1!, 2!, 3!, 4!]"</span>
+<span class="k">let</span> <span class="nv">array</span> <span class="o">=</span> <span class="kt">ADInstanceArray</span><span class="o">.</span><span class="nf">decode</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</code></pre>
+
+<p>The portable, human-readable string format encodes values with a single character <em>type designator</em> as follows:</p>
+
+<ul>
+<li><code>%</code> - Bool</li>
+<li><code>!</code> - Int</li>
+<li><code>$</code> - String</li>
+<li><code>^</code> - Float</li>
+<li><code>&amp;</code> - Double</li>
+<li><code>*</code> - Embedded <code>NSData</code> or <code>Data</code> value</li>
+</ul>
+
+<p>Additionally, embedded arrays will be in the <code>@array[...]</code> format and embedded dictionaries in the <code>@obj:type&lt;...&gt;</code> format.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Class%20Functions"></a>
+                <a name="//apple_ref/swift/Section/Class Functions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Class%20Functions"></a>
+                  <h3 class="section-name"><p>Class Functions</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData15ADInstanceArrayC11escapeValueyS2SFZ"></a>
+                    <a name="//apple_ref/swift/Method/escapeValue(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData15ADInstanceArrayC11escapeValueyS2SFZ">escapeValue(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts a given value into a format that can be safely stored in an <code>ADInstanceArray</code> portable, human-readable string format.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">escapeValue</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The string value to be escaped.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The string with any non-safe characters encoded in a safe format.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData15ADInstanceArrayC13unescapeValueyS2SFZ"></a>
+                    <a name="//apple_ref/swift/Method/unescapeValue(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData15ADInstanceArrayC13unescapeValueyS2SFZ">unescapeValue(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts a value stored in portable, human-readable string format and converts it back to its original format.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">unescapeValue</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The string including any escaped values.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The string with any escaped values converted back to their original format</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData15ADInstanceArrayC6decodeyACSSFZ"></a>
+                    <a name="//apple_ref/swift/Method/decode(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData15ADInstanceArrayC6decodeyACSSFZ">decode(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Takes a <code>ADInstanceArray</code> object stored in a portable, human-readable string format and converts it to an array of the original values.</p>
+<h2 id='example' class='heading'>Example:</h2>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="s">"@array[1!, 2!, 3!, 4!]"</span>
+<span class="k">let</span> <span class="nv">array</span> <span class="o">=</span> <span class="kt">ADInstanceArray</span><span class="o">.</span><span class="nf">decode</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</code></pre>
+<h2 id='data-types' class='heading'>Data Types</h2>
+
+<p>The portable, human-readable string format encodes values with a single character <em>type designator</em> as follows:</p>
+
+<ul>
+<li><code>%</code> - Bool</li>
+<li><code>!</code> - Int</li>
+<li>` - String</li>
+<li><code>^</code> - Float</li>
+<li><code>&amp;</code> - Double</li>
+</ul>
+
+<p>Additionally, embedded arrays (<code>ADInstanceArray</code>) will be in the <code>@array[...]</code> format and embedded dictionaries (<code><a href="../Classes/ADInstanceDictionary.html">ADInstanceDictionary</a></code>) in the <code>@obj:type&lt;...&gt;</code> format.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">decode</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">ADInstanceArray</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>text</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The string in the portable, human-readable string format.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance array of the original Swift object values.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><p>Properties</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData15ADInstanceArrayC12subTableNameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/subTableName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData15ADInstanceArrayC12subTableNameSSvp">subTableName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stores the name a sub <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> used in a one-to-one foreign key relationship with the main table.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">subTableName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData15ADInstanceArrayC18subTablePrimaryKeySSvp"></a>
+                    <a name="//apple_ref/swift/Property/subTablePrimaryKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData15ADInstanceArrayC18subTablePrimaryKeySSvp">subTablePrimaryKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stores the name of the primary key for a sub <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> used in a one-to-one foreign key relationship with the main table.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">subTablePrimaryKey</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData15ADInstanceArrayC22subTablePrimaryKeyTypeAA06ADDatafhI0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/subTablePrimaryKeyType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData15ADInstanceArrayC22subTablePrimaryKeyTypeAA06ADDatafhI0Ovp">subTablePrimaryKeyType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stores the primary key type for a sub <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> used in a one-to-one foreign key relationship with the main table.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">subTablePrimaryKeyType</span><span class="p">:</span> <span class="kt"><a href="../Enums/ADDataTableKeyType.html">ADDataTableKeyType</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData15ADInstanceArrayC7storageSayypGvp"></a>
+                    <a name="//apple_ref/swift/Property/storage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData15ADInstanceArrayC7storageSayypGvp">storage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of values encoded from the object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">storage</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Functions"></a>
+                <a name="//apple_ref/swift/Section/Functions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Functions"></a>
+                  <h3 class="section-name"><p>Functions</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData15ADInstanceArrayC6encodeSSyF"></a>
+                    <a name="//apple_ref/swift/Method/encode()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData15ADInstanceArrayC6encodeSSyF">encode()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts the <code>ADInstanceArray</code> instance to a portable, human-readable string format.</p>
+<h2 id='data-types' class='heading'>Data Types</h2>
+
+<p>The portable, human-readable string format encodes values with a single character <em>type designator</em> as follows:</p>
+
+<ul>
+<li><code>%</code> - Bool</li>
+<li><code>!</code> - Int</li>
+<li>` - String</li>
+<li><code>^</code> - Float</li>
+<li><code>&amp;</code> - Double</li>
+</ul>
+
+<p>Additionally, embedded arrays will be in the <code>@array[...]</code> format and embedded dictionaries (<code><a href="../Classes/ADInstanceDictionary.html">ADInstanceDictionary</a></code>) in the <code>@obj:type&lt;...&gt;</code> format.</p>
+<h2 id='example-output' class='heading'>Example Output</h2>
+<pre class="highlight swift"><code><span class="kd">@array</span><span class="p">[</span><span class="mi">1</span><span class="o">!</span><span class="p">,</span> <span class="mi">2</span><span class="o">!</span><span class="p">,</span> <span class="mi">3</span><span class="o">!</span><span class="p">,</span> <span class="mi">4</span><span class="o">!</span><span class="p">]</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">encode</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A portable, human-readable string representing the array of values.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external">Appracatappra, LLC</a>. All rights reserved. (Last updated: 2021-05-10)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

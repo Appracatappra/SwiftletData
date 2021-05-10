@@ -1,0 +1,2130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ADDataProvider Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/ADDataProvider" class="dashAnchor"></a>
+    <a title="ADDataProvider Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SwiftletData Docs</a> (83% documented)</p>
+        <p class="header-right"><a href="dash-feed://http%3A%2F%2Fappracatappra.com%2Fapi%2Fdocsets%2FSwiftletData.xml"><img src="../img/dash.png"/>Install in Dash</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SwiftletData Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ADDataProvider Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ADColumnSchema.html">ADColumnSchema</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADDataStore.html">ADDataStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADInstanceArray.html">ADInstanceArray</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADInstanceDictionary.html">ADInstanceDictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONDecoder.html">ADSPONDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONDecoder/DateDecodingStrategy.html">– DateDecodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONDecoder/DataDecodingStrategy.html">– DataDecodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONEncoder.html">ADSPONEncoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONEncoder/DateEncodingStrategy.html">– DateEncodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONEncoder/DataEncodingStrategy.html">– DataEncodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONProvider.html">ADSPONProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLBetweenExpression.html">ADSQLBetweenExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLBinaryExpression.html">ADSQLBinaryExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLBinaryExpression/BinaryOperation.html">– BinaryOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLCaseExpression.html">ADSQLCaseExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLDecoder.html">ADSQLDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLDecoder/DateDecodingStrategy.html">– DateDecodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLDecoder/DataDecodingStrategy.html">– DataDecodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLEncoder.html">ADSQLEncoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLEncoder/DateEncodingStrategy.html">– DateEncodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLEncoder/DataEncodingStrategy.html">– DataEncodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLExpressionBuilder.html">ADSQLExpressionBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLForeignKeyExpression.html">ADSQLForeignKeyExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLForeignKeyExpression/OnModify.html">– OnModify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLForeignKeyExpression/ModifyAction.html">– ModifyAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLFunctionExpression.html">ADSQLFunctionExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLInExpression.html">ADSQLInExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLJoinClause.html">ADSQLJoinClause</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLJoinClause/JoinType.html">– JoinType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLLiteralExpression.html">ADSQLLiteralExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLParser.html">ADSQLParser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLUnaryExpression.html">ADSQLUnaryExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLUnaryExpression/UnaryOperation.html">– UnaryOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLWhenExpression.html">ADSQLWhenExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLiteProvider.html">ADSQLiteProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADTableSchema.html">ADTableSchema</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADTableStore.html">ADTableStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADUtilities.html">ADUtilities</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADUtilities/Comparison.html">– Comparison</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADUtilities/Operation.html">– Operation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADiCloudProvider.html">ADiCloudProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:12SwiftletData11SQLITE_DATEs5Int32Vvp">SQLITE_DATE</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ADDataProviderError.html">ADDataProviderError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADDataTableKeyType.html">ADDataTableKeyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLColumnType.html">ADSQLColumnType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLConflictHandling.html">ADSQLConflictHandling</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLExecutionError.html">ADSQLExecutionError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLFunction.html">ADSQLFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLKeyword.html">ADSQLKeyword</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLParseError.html">ADSQLParseError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADiCloudDatabaseType.html">ADiCloudDatabaseType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ADDataCrossReference.html">ADDataCrossReference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ADDataProvider.html">ADDataProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ADDataTable.html">ADDataTable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ADSQLExpression.html">ADSQLExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:12SwiftletData16ADSQLInstructionP">ADSQLInstruction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ADCrossReference.html">ADCrossReference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLAlterTableInstruction.html">ADSQLAlterTableInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLColumnConstraint.html">ADSQLColumnConstraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLColumnConstraint/ColumnConstraintType.html">– ColumnConstraintType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLColumnDefinition.html">ADSQLColumnDefinition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateIndexInstruction.html">ADSQLCreateIndexInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateTableInstruction.html">ADSQLCreateTableInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateTriggerInstruction.html">ADSQLCreateTriggerInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateTriggerInstruction/WhenToTrigger.html">– WhenToTrigger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateTriggerInstruction/TriggerType.html">– TriggerType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateViewInstruction.html">ADSQLCreateViewInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLDeleteInstruction.html">ADSQLDeleteInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLDropInstruction.html">ADSQLDropInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLDropInstruction/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLInsertInstruction.html">ADSQLInsertInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLInsertInstruction/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLOrderByClause.html">ADSQLOrderByClause</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLOrderByClause/Order.html">– Order</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLResultColumn.html">ADSQLResultColumn</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLSelectInstruction.html">ADSQLSelectInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLSetClause.html">ADSQLSetClause</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLTableConstraint.html">ADSQLTableConstraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLTableConstraint/TableConstraintType.html">– TableConstraintType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLTransactionInstruction.html">ADSQLTransactionInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLTransactionInstruction/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLUpdateInstruction.html">ADSQLUpdateInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLUpdateInstruction/Action.html">– Action</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12SwiftletData8ADRecorda">ADRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12SwiftletData11ADRecordSeta">ADRecordSet</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ADDataProvider</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ADDataProvider</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Defines an Action Data Provider that can be used to read and write data from a given data source.</p>
+
+<p>A <code>ADDataProvider</code> provides both light-weight, low-level access to data stored in a SQLite database and high-level access via a Object Relationship Management (ORM) model. Use provided functions to read and write data stored in a <code><a href="../Typealiases.html#/s:12SwiftletData8ADRecorda">ADRecord</a></code> format from and to the database using SQL statements directly.</p>
+<h2 id='example' class='heading'>Example:</h2>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">provider</span> <span class="o">=</span> <span class="kt">ADDataProvider</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">record</span> <span class="o">=</span> <span class="k">try</span> <span class="n">provider</span><span class="o">.</span><span class="nf">query</span><span class="p">(</span><span class="s">"SELECT * FROM Categories WHERE id = ?"</span><span class="p">,</span> <span class="nv">withParameters</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s">"name"</span><span class="p">])</span>
+</code></pre>
+
+<p>Optionally, pass a class instance conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol to the <code><a href="../Classes/ADSQLiteProvider.html">ADSQLiteProvider</a></code> and it will automatically handle reading, writing and deleting data as required.</p>
+<h2 id='example' class='heading'>Example:</h2>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">addr1</span> <span class="o">=</span> <span class="kt">Address</span><span class="p">(</span><span class="nv">addr1</span><span class="p">:</span> <span class="s">"PO Box 1234"</span><span class="p">,</span> <span class="nv">addr2</span><span class="p">:</span> <span class="s">""</span><span class="p">,</span> <span class="nv">city</span><span class="p">:</span> <span class="s">"Houston"</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="s">"TX"</span><span class="p">,</span> <span class="nv">zip</span><span class="p">:</span> <span class="s">"77012"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">addr2</span> <span class="o">=</span> <span class="kt">Address</span><span class="p">(</span><span class="nv">addr1</span><span class="p">:</span> <span class="s">"25 Nasa Rd 1"</span><span class="p">,</span> <span class="nv">addr2</span><span class="p">:</span> <span class="s">"Apt #123"</span><span class="p">,</span> <span class="nv">city</span><span class="p">:</span> <span class="s">"Seabrook"</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="s">"TX"</span><span class="p">,</span> <span class="nv">zip</span><span class="p">:</span> <span class="s">"77586"</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">p1</span> <span class="o">=</span> <span class="kt">Person</span><span class="p">(</span><span class="nv">firstName</span><span class="p">:</span> <span class="s">"John"</span><span class="p">,</span> <span class="nv">lastName</span><span class="p">:</span> <span class="s">"Doe"</span><span class="p">,</span> <span class="nv">addresses</span><span class="p">:</span> <span class="p">[</span><span class="s">"home"</span><span class="p">:</span><span class="n">addr1</span><span class="p">,</span> <span class="s">"work"</span><span class="p">:</span><span class="n">addr2</span><span class="p">])</span>
+<span class="k">let</span> <span class="nv">p2</span> <span class="o">=</span> <span class="kt">Person</span><span class="p">(</span><span class="nv">firstName</span><span class="p">:</span> <span class="s">"Sue"</span><span class="p">,</span> <span class="nv">lastName</span><span class="p">:</span> <span class="s">"Smith"</span><span class="p">,</span> <span class="nv">addresses</span><span class="p">:</span> <span class="p">[</span><span class="s">"home"</span><span class="p">:</span><span class="n">addr1</span><span class="p">,</span> <span class="s">"work"</span><span class="p">:</span><span class="n">addr2</span><span class="p">])</span>
+
+<span class="k">let</span> <span class="nv">group</span> <span class="o">=</span> <span class="kt">Group</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Employees"</span><span class="p">,</span> <span class="nv">people</span><span class="p">:</span> <span class="p">[</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">])</span>
+<span class="k">try</span> <span class="n">provider</span><span class="o">.</span><span class="nf">save</span><span class="p">(</span><span class="n">group</span><span class="p">)</span>
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Public%20Properties"></a>
+                  <h3 class="section-name"><p>Public Properties</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP6isOpenSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isOpen" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP6isOpenSbvp">isOpen</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Is there currently a data source open for the provider.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isOpen</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP10isReadOnlySbvp"></a>
+                    <a name="//apple_ref/swift/Property/isReadOnly" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP10isReadOnlySbvp">isReadOnly</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Can the data provider write to the given data source.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isReadOnly</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP11knownTablesSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/knownTables" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP11knownTablesSaySSGvp">knownTables</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of all tables that have been read from or written to the given data source.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">knownTables</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Functions"></a>
+                <a name="//apple_ref/swift/Section/Public Functions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Public%20Functions"></a>
+                  <h3 class="section-name"><p>Public Functions</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP10openSource_10fromBundle8readOnlyySS_S2btKF"></a>
+                    <a name="//apple_ref/swift/Method/openSource(_:fromBundle:readOnly:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP10openSource_10fromBundle8readOnlyySS_S2btKF">openSource(_:<wbr>fromBundle:<wbr>readOnly:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Opens the given source file for the data provider.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">openSource</span><span class="p">(</span><span class="n">_</span> <span class="nv">fileName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">fromBundle</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">readOnly</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fileName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the source file to open.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fromBundle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Is the source file in the app&rsquo;s Bundle directory.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>readOnly</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Open the source file read only.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP12createSourceyySSKF"></a>
+                    <a name="//apple_ref/swift/Method/createSource(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP12createSourceyySSKF">createSource(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates the given source file for the data provider.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createSource</span><span class="p">(</span><span class="n">_</span> <span class="nv">filename</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filename</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the source file to create.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP10saveSourceyySSKF"></a>
+                    <a name="//apple_ref/swift/Method/saveSource(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP10saveSourceyySSKF">saveSource(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Saves an in-memory database to the given filename or copies a disk-based database (such as SQLite) to the new filename.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">saveSource</span><span class="p">(</span><span class="n">_</span> <span class="nv">filename</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filename</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the file to save or copy the database to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP7persistyyKF"></a>
+                    <a name="//apple_ref/swift/Method/persist()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP7persistyyKF">persist()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>For in-memory data sources, writes the contents of the in-memory source to persistant storage.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">persist</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP11closeSourceyyKF"></a>
+                    <a name="//apple_ref/swift/Method/closeSource()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP11closeSourceyyKF">closeSource()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Closes any open data source attached to the data provider.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">closeSource</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP12deleteSourceyySSKF"></a>
+                    <a name="//apple_ref/swift/Method/deleteSource(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP12deleteSourceyySSKF">deleteSource(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>For writable data sources, delete the data source with the specified file name.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deleteSource</span><span class="p">(</span><span class="n">_</span> <span class="nv">fileName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fileName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the data source to delete.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP7execute_14withParametersSiSS_SayypGSgtKF"></a>
+                    <a name="//apple_ref/swift/Method/execute(_:withParameters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP7execute_14withParametersSiSS_SayypGSgtKF">execute(_:<wbr>withParameters:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Execute SQL (non-query) command with (optional) parameters and return result code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="n">_</span> <span class="nv">sql</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withParameters</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sql</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The SQL statement to be executed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of optional parameters incase the SQL statement includes bound parameters (indicated by <code>?</code> in the SQL Statement).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>If executing an <code>INSERT</code> command of a record with an <code>INTEGER</code> id, the last inserted ID will be returned. For <code>DELETE</code> and <code>UPDATE</code> commands, a count of number of records modified will be returned. All other commands will return <code>1</code> on success and <code>-1</code> on failure.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP5query_14withParametersSaySDySSypGGSS_SayypGSgtKF"></a>
+                    <a name="//apple_ref/swift/Method/query(_:withParameters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP5query_14withParametersSaySDySSypGGSS_SayypGSgtKF">query(_:<wbr>withParameters:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Run an SQL query with (parameters) parameters and returns an array of dictionaries where the keys are the column names.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">query</span><span class="p">(</span><span class="n">_</span> <span class="nv">sql</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withParameters</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12SwiftletData11ADRecordSeta">ADRecordSet</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sql</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The SQL statement to be executed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of optional parameters incase the SQL statement includes bound parameters (indicated by <code>?</code> in the SQL Statement).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An empty array if the query resulted in no rows. Otherwise, an array of dictionaries where each dictioanry key is a column name and the value is the column value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP11tableExistsySbSSKF"></a>
+                    <a name="//apple_ref/swift/Method/tableExists(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP11tableExistsySbSSKF">tableExists(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks to see if the given table exists in the SQLite database.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">tableExists</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tableName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name the table to check.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the table exists, else `false.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP9countRows7inTable10filteredBy14withParametersSiSS_SSSayypGSgtKF"></a>
+                    <a name="//apple_ref/swift/Method/countRows(inTable:filteredBy:withParameters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP9countRows7inTable10filteredBy14withParametersSiSS_SSSayypGSgtKF">countRows(inTable:<wbr>filteredBy:<wbr>withParameters:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Counts the number of records in a given table, optionally filtered by a given set of contraints where a &ldquo;table&rdquo; represents the base unit of data (for example a SQLite table or JSON node) for the source of the data provider. </p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">countRows</span><span class="p">(</span><span class="n">inTable</span> <span class="nv">table</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">filteredBy</span> <span class="nv">filter</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withParameters</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>table</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the table to count records for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filter</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The optional filter criteria to be used in fetching the data. Specify the filter criteria in the form of a valid SQL WHERE clause (without the actual <code>WHERE</code> keyword). If this parameter is omitted or a blank string is provided, all rows will be fetched.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of optional parameters incase the SQL statement includes bound parameters (indicated by <code>?</code> in the SQL Statement).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An integer value indicating the total number of rows, if no filter criteria was provided, or the number of rows matching the provided filter criteria. If the table doesn&rsquo;t exist, 0 is returned.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP9lastIntID8forTable7withKeySiSS_SStKF"></a>
+                    <a name="//apple_ref/swift/Method/lastIntID(forTable:withKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP9lastIntID8forTable7withKeySiSS_SStKF">lastIntID(forTable:<wbr>withKey:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the largest used number for the given integer primary key of the given table.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">lastIntID</span><span class="p">(</span><span class="n">forTable</span> <span class="nv">table</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withKey</span> <span class="nv">primaryKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>table</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the table to get the last ID from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>primaryKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the primary key.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The largest used number for the given primary key or zero if no record has been written to the table yet.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP10lastAutoID8forTableSiSS_tKF"></a>
+                    <a name="//apple_ref/swift/Method/lastAutoID(forTable:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP10lastAutoID8forTableSiSS_tKF">lastAutoID(forTable:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the last auto generated integer ID for the given table.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">lastAutoID</span><span class="p">(</span><span class="n">forTable</span> <span class="nv">table</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>table</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the table to get the last ID from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The last auto generated integer id or zero if no data has been saved to the table or if the table does not have an auto generated integer primary key.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/ORM%20Functions"></a>
+                <a name="//apple_ref/swift/Section/ORM Functions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/ORM%20Functions"></a>
+                  <h3 class="section-name"><p>ORM Functions</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP19registerTableSchema_17withDefaultValuesyqd__m_qd__tKAA0cF0Rd__lF"></a>
+                    <a name="//apple_ref/swift/Method/registerTableSchema(_:withDefaultValues:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP19registerTableSchema_17withDefaultValuesyqd__m_qd__tKAA0cF0Rd__lF">registerTableSchema(_:<wbr>withDefaultValues:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers the given <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> class schema with the data provider and creates a table for the class if it doesn&rsquo;t already exist.</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    Classes are usually registered when an app first starts, directly after a database is opened.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">registerTableSchema</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">withDefaultValues</span> <span class="nv">instance</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of the class to register.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>instance</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An instance of the type with all properties set to the default values that you want to have added to the data source.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP17updateTableSchema_17withDefaultValuesyqd__m_qd__tKAA0cF0Rd__lF"></a>
+                    <a name="//apple_ref/swift/Method/updateTableSchema(_:withDefaultValues:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP17updateTableSchema_17withDefaultValuesyqd__m_qd__tKAA0cF0Rd__lF">updateTableSchema(_:<wbr>withDefaultValues:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Attempts to modify the data source table schema to match the schema of the given <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> class if the schema has changed. If the table does not exist, it will attempt to be registered with the data source. If any new columns have been added, the default values will be set from the given defaults.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">updateTableSchema</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">withDefaultValues</span> <span class="nv">instance</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of the class to update the schema of.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>instance</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An instance of the type with all properties set to the default values that you want to have added to the data source.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP6hasRow7forType18matchingPrimaryKeySbqd__m_yptKAA0C5TableRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/hasRow(forType:matchingPrimaryKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP6hasRow7forType18matchingPrimaryKeySbqd__m_yptKAA0C5TableRd__lF">hasRow(forType:<wbr>matchingPrimaryKey:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks to see if a row matching the given primary key exists in the underlying SQLite table.</p>
+
+<ul>
+<li>type: The <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> class to check if the row exists for.</li>
+<li>key: The primary key value to search for.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">hasRow</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">forType</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">matchingPrimaryKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if a row matching the primary key is found, else <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP8rowCount7forType8filterBy14withParametersSiqd__m_SSSayypGSgtKAA0C5TableRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/rowCount(forType:filterBy:withParameters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP8rowCount7forType8filterBy14withParametersSiqd__m_SSSayypGSgtKAA0C5TableRd__lF">rowCount(forType:<wbr>filterBy:<wbr>withParameters:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the count of rows in the table, or the count of rows matching a specific filter criteria, if one was provided.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">rowCount</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">forType</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">filterBy</span> <span class="nv">filter</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withParameters</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A class conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol to count rows for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filter</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The optional filter criteria to be used in fetching the data. Specify the filter criteria in the form of a valid SQL <code>WHERE</code> clause (without the actual <code>WHERE</code> keyword). If this parameter is omitted or a blank string is provided, all rows will be fetched.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of optional parameters incase the SQL statement includes bound parameters (indicated by <code>?</code> in the SQL Statement).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An integer value indicating the total number of rows or rows matching the optional filter in the given table.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP4makeyqd__qd__mKAA0C5TableRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/make(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP4makeyqd__qd__mKAA0C5TableRd__lF">make(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an instance of the given <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> class automatically setting the <strong>primaryKey</strong> field based on the value of the <strong>primaryKeyType</strong>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">make</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The class conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol to create an instance of.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new instance of the given class with the <strong>primaryKey</strong> automatically set.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP6makeIDyypSgqd__mAA0C5TableRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/makeID(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP6makeIDyypSgqd__mAA0C5TableRd__lF">makeID(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a value for the <strong>primaryKey</strong> field based on the value of the <strong>primaryKeyType</strong> for a class conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">makeID</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="p">?</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The class conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol to create primary key for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new primary key value if it can be generated, else returns <code>nil</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP14getTableSchema03forF4NameAA07ADTableG0CSS_tKF"></a>
+                    <a name="//apple_ref/swift/Method/getTableSchema(forTableName:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP14getTableSchema03forF4NameAA07ADTableG0CSS_tKF">getTableSchema(forTableName:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns all information about a given table in the data source including all of the columns and their types.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getTableSchema</span><span class="p">(</span><span class="n">forTableName</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ADTableSchema.html">ADTableSchema</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the table to return the schema for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code><a href="../Classes/ADTableSchema.html">ADTableSchema</a></code> instance describing the requested table.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP4saveyypqd__KAA0C5TableRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/save(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP4saveyypqd__KAA0C5TableRd__lF">save(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Saves the given class conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol to the data source. If the data source does not contain a table named in the <strong>tableName</strong> property, one will be created first. If a record is not on file matching the <strong>primaryKey</strong> value, a new record will be created, else the existing record will be updated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">save</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Any</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The class instance to save to the database.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>If inserting a record with an <code>INTEGER</code> id, the last inserted ID will be returned, else the primary key value will be returned.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP4saveyySayqd__GKAA0C5TableRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/save(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP4saveyySayqd__GKAA0C5TableRd__lF">save(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Saves the given array of class instances conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol to the data source. If the data source does not contain a table named in the <strong>tableName</strong> property, one will be created first. If a record is not on file matching the <strong>primaryKey</strong> value, a new record will be created, else the existing record will be updated.</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    Uses a transaction to process all data source changes in a single batch. If an error occurs, all changes will be rolled-back and the data source will not be modified.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">save</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt">T</span><span class="p">])</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>values</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The array of class instances to save to the data source.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP7getRows6ofType10fliteredBy07orderedJ010startingAt9limitedTo14withParametersSayqd__Gqd__m_S2SS2iSayypGSgtKAA0C5TableRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/getRows(ofType:fliteredBy:orderedBy:startingAt:limitedTo:withParameters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP7getRows6ofType10fliteredBy07orderedJ010startingAt9limitedTo14withParametersSayqd__Gqd__m_S2SS2iSayypGSgtKAA0C5TableRd__lF">getRows(ofType:<wbr>fliteredBy:<wbr>orderedBy:<wbr>startingAt:<wbr>limitedTo:<wbr>withParameters:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns rows from the data source of the given class type optionally filtered, sorted and limited to a specific range of results.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">getRows</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ofType</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">fliteredBy</span> <span class="nv">filter</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">orderedBy</span> <span class="nv">order</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">startingAt</span> <span class="nv">start</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">limitedTo</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">withParameters</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">T</span><span class="p">]</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A class conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol to store the records in.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filter</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The optional filter criteria to be used in fetching the data. Specify in the form of a valid SQL <code>WHERE</code> clause (without the actual <code>WHERE</code> keyword). If this parameter is omitted or a blank string is provided, all rows will be fetched.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>order</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The optional sorting criteria to be used in fetching the data. Specify in the form of a valid SQL <code>ORDER BY</code> clause (without the actual <code>ORDER BY</code> keyword). If this parameter is omitted or a blank string is provided, no sorting will be applied.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>start</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The starting index for the returned results. If omitted or zero, the result set starts with the first record.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>limit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Limits the returned results to a maximum number. If omitted or zero, all matching results are returned.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of optional parameters incase the SQL statement includes bound parameters (indicated by <code>?</code> in the SQL Statement).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of matching records in the given class type or an empty array if no matching records were found.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP7getRows6ofType11matchingSQL14withParametersSayqd__Gqd__m_SSSayypGSgtKAA0C5TableRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/getRows(ofType:matchingSQL:withParameters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP7getRows6ofType11matchingSQL14withParametersSayqd__Gqd__m_SSSayypGSgtKAA0C5TableRd__lF">getRows(ofType:<wbr>matchingSQL:<wbr>withParameters:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns rows from the data source of the given class type matching the given SQL statement.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">getRows</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ofType</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">matchingSQL</span> <span class="nv">sql</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withParameters</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">T</span><span class="p">]</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A class conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol to store the records in.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sql</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A valid SQL statement used to pull matching records from the database.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of optional parameters incase the SQL statement includes bound parameters (indicated by <code>?</code> in the SQL Statement).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of matching records in the given class type or an empty array if no matching records were found.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP6getRow6ofType18forPrimaryKeyValueqd__Sgqd__m_yptKAA0C5TableRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/getRow(ofType:forPrimaryKeyValue:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP6getRow6ofType18forPrimaryKeyValueqd__Sgqd__m_yptKAA0C5TableRd__lF">getRow(ofType:<wbr>forPrimaryKeyValue:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a row from the SQLite database of the given class type matching the given primary key value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">getRow</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ofType</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">forPrimaryKeyValue</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A class conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol to store the records in.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The primary key value to return a record for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A record of the requested type if found or <code>nil</code> if not found.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP6getRow6ofType7atIndex10fliteredBy07orderedL014withParametersqd__Sgqd__m_SiS2SSayypGSgtKAA0C5TableRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/getRow(ofType:atIndex:fliteredBy:orderedBy:withParameters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP6getRow6ofType7atIndex10fliteredBy07orderedL014withParametersqd__Sgqd__m_SiS2SSayypGSgtKAA0C5TableRd__lF">getRow(ofType:<wbr>atIndex:<wbr>fliteredBy:<wbr>orderedBy:<wbr>withParameters:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a row from the data source of the given class type optionally filtered and limited to a specific range of results.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">getRow</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ofType</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">atIndex</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">fliteredBy</span> <span class="nv">filter</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">orderedBy</span> <span class="nv">order</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withParameters</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A class conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol to store the records in.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>index</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The starting index of the record to return.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filter</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The optional filter criteria to be used in fetching the data. Specify in the form of a valid SQL <code>WHERE</code> clause (without the actual <code>WHERE</code> keyword). If this parameter is omitted or a blank string is provided, all rows will be fetched.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>order</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The optional sorting criteria to be used in fetching the data. Specify in the form of a valid SQL <code>ORDER BY</code> clause (without the actual <code>ORDER BY</code> keyword). If this parameter is omitted or a blank string is provided, no sorting will be applied.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of optional parameters incase the SQL statement includes bound parameters (indicated by <code>?</code> in the SQL Statement).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A record of the requested type if found or <code>nil</code> if not found.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP6deleteyyqd__KAA0C5TableRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/delete(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP6deleteyyqd__KAA0C5TableRd__lF">delete(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Deletes the row matching the given record from the SQLite database.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">delete</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An instance of a class conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol to delete from the data source.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP6deleteyySayqd__GKAA0C5TableRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/delete(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP6deleteyySayqd__GKAA0C5TableRd__lF">delete(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Deletes the given set of records from the data source.</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    Uses a transaction to process all data source changes in a single batch. If an error occurs, all changes will be rolled-back and the data source will not be modified.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">delete</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt">T</span><span class="p">])</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP9dropTableyyqd__mKAA0cF0Rd__lF"></a>
+                    <a name="//apple_ref/swift/Method/dropTable(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP9dropTableyyqd__mKAA0cF0Rd__lF">dropTable(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Drops the underlying table from the data source, completely removing all stored data in the table as well as the table itself.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    This command is <strong>not</strong> undable and should be used with caution!
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">dropTable</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP16beginTransactionyyKF"></a>
+                    <a name="//apple_ref/swift/Method/beginTransaction()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP16beginTransactionyyKF">beginTransaction()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Starts an explicit transaction to process a batch of data source changes. Once started, the transaction will remain open until it is either committed (via <code>endTransaction</code>) or rolled-back (via `rollbackTransaction).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">beginTransaction</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP14endTransactionyyKF"></a>
+                    <a name="//apple_ref/swift/Method/endTransaction()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP14endTransactionyyKF">endTransaction()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Attempts to commit any chages to the data source and close the current transaction that was opened using <code>beginTransaction</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">endTransaction</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData14ADDataProviderP19rollbackTransactionyyKF"></a>
+                    <a name="//apple_ref/swift/Method/rollbackTransaction()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData14ADDataProviderP19rollbackTransactionyyKF">rollbackTransaction()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Ends the current transaction (opened using <code>beginTransaction</code>) and undoes any changes made to the data source since the transaction was opened.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">rollbackTransaction</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external">Appracatappra, LLC</a>. All rights reserved. (Last updated: 2021-05-10)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

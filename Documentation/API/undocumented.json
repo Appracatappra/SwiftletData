@@ -1,0 +1,1041 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionDataProviders/ADiCloudProvider.swift",
+      "line": 13,
+      "symbol": "ADiCloudProvider",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionDataProviders/ADiCloudProvider.swift",
+      "line": 211,
+      "symbol": "ADiCloudProvider.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 13,
+      "symbol": "ADSQLKeyword.abortKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 14,
+      "symbol": "ADSQLKeyword.actionKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 15,
+      "symbol": "ADSQLKeyword.addKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 16,
+      "symbol": "ADSQLKeyword.afterKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 17,
+      "symbol": "ADSQLKeyword.allKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 18,
+      "symbol": "ADSQLKeyword.alterKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 19,
+      "symbol": "ADSQLKeyword.analyzeKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 20,
+      "symbol": "ADSQLKeyword.andKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 21,
+      "symbol": "ADSQLKeyword.asKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 22,
+      "symbol": "ADSQLKeyword.ascKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 23,
+      "symbol": "ADSQLKeyword.attachKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 24,
+      "symbol": "ADSQLKeyword.autoIncrementKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 25,
+      "symbol": "ADSQLKeyword.beforeKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 26,
+      "symbol": "ADSQLKeyword.beginKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 27,
+      "symbol": "ADSQLKeyword.betweenKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 28,
+      "symbol": "ADSQLKeyword.byKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 29,
+      "symbol": "ADSQLKeyword.cascadeKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 30,
+      "symbol": "ADSQLKeyword.caseKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 31,
+      "symbol": "ADSQLKeyword.castKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 32,
+      "symbol": "ADSQLKeyword.checkKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 33,
+      "symbol": "ADSQLKeyword.collateKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 34,
+      "symbol": "ADSQLKeyword.columnKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 35,
+      "symbol": "ADSQLKeyword.commitKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 36,
+      "symbol": "ADSQLKeyword.conflictKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 37,
+      "symbol": "ADSQLKeyword.constraintKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 38,
+      "symbol": "ADSQLKeyword.createKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 39,
+      "symbol": "ADSQLKeyword.crossKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 40,
+      "symbol": "ADSQLKeyword.currentDateKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 41,
+      "symbol": "ADSQLKeyword.currentTimeKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 42,
+      "symbol": "ADSQLKeyword.currentTimestampKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 43,
+      "symbol": "ADSQLKeyword.databaseKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 44,
+      "symbol": "ADSQLKeyword.defaultKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 45,
+      "symbol": "ADSQLKeyword.deferrableKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 46,
+      "symbol": "ADSQLKeyword.deferredKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 47,
+      "symbol": "ADSQLKeyword.deleteKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 48,
+      "symbol": "ADSQLKeyword.descKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 49,
+      "symbol": "ADSQLKeyword.detachKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 50,
+      "symbol": "ADSQLKeyword.distinctKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 51,
+      "symbol": "ADSQLKeyword.dropKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 52,
+      "symbol": "ADSQLKeyword.eachKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 53,
+      "symbol": "ADSQLKeyword.elseKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 54,
+      "symbol": "ADSQLKeyword.endKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 55,
+      "symbol": "ADSQLKeyword.escapeKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 56,
+      "symbol": "ADSQLKeyword.exceptKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 57,
+      "symbol": "ADSQLKeyword.exclusiveKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 58,
+      "symbol": "ADSQLKeyword.existsKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 59,
+      "symbol": "ADSQLKeyword.explainKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 60,
+      "symbol": "ADSQLKeyword.failKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 61,
+      "symbol": "ADSQLKeyword.forKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 62,
+      "symbol": "ADSQLKeyword.foreignKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 63,
+      "symbol": "ADSQLKeyword.fromKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 64,
+      "symbol": "ADSQLKeyword.fullKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 65,
+      "symbol": "ADSQLKeyword.globKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 66,
+      "symbol": "ADSQLKeyword.groupKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 67,
+      "symbol": "ADSQLKeyword.havingKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 68,
+      "symbol": "ADSQLKeyword.ifKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 69,
+      "symbol": "ADSQLKeyword.ignoreKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 70,
+      "symbol": "ADSQLKeyword.immediateKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 71,
+      "symbol": "ADSQLKeyword.inKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 72,
+      "symbol": "ADSQLKeyword.indexKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 73,
+      "symbol": "ADSQLKeyword.indexedKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 74,
+      "symbol": "ADSQLKeyword.initiallyKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 75,
+      "symbol": "ADSQLKeyword.innerKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 76,
+      "symbol": "ADSQLKeyword.insertKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 77,
+      "symbol": "ADSQLKeyword.insteadKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 78,
+      "symbol": "ADSQLKeyword.intersectKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 79,
+      "symbol": "ADSQLKeyword.intoKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 80,
+      "symbol": "ADSQLKeyword.isKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 81,
+      "symbol": "ADSQLKeyword.isNullKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 82,
+      "symbol": "ADSQLKeyword.joinKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 83,
+      "symbol": "ADSQLKeyword.keyKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 84,
+      "symbol": "ADSQLKeyword.leftKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 85,
+      "symbol": "ADSQLKeyword.likeKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 86,
+      "symbol": "ADSQLKeyword.limitKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 87,
+      "symbol": "ADSQLKeyword.matchKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 88,
+      "symbol": "ADSQLKeyword.naturalKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 89,
+      "symbol": "ADSQLKeyword.noKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 90,
+      "symbol": "ADSQLKeyword.notKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 91,
+      "symbol": "ADSQLKeyword.notNullKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 92,
+      "symbol": "ADSQLKeyword.nullKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 93,
+      "symbol": "ADSQLKeyword.ofKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 94,
+      "symbol": "ADSQLKeyword.offsetKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 95,
+      "symbol": "ADSQLKeyword.onKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 96,
+      "symbol": "ADSQLKeyword.orKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 97,
+      "symbol": "ADSQLKeyword.orderKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 98,
+      "symbol": "ADSQLKeyword.outerKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 99,
+      "symbol": "ADSQLKeyword.planKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 100,
+      "symbol": "ADSQLKeyword.pragmaKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 101,
+      "symbol": "ADSQLKeyword.primaryKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 102,
+      "symbol": "ADSQLKeyword.queryKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 103,
+      "symbol": "ADSQLKeyword.raiseKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 104,
+      "symbol": "ADSQLKeyword.recursiveKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 105,
+      "symbol": "ADSQLKeyword.referencesKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 106,
+      "symbol": "ADSQLKeyword.regexpKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 107,
+      "symbol": "ADSQLKeyword.reindexKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 108,
+      "symbol": "ADSQLKeyword.releaseKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 109,
+      "symbol": "ADSQLKeyword.renameKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 110,
+      "symbol": "ADSQLKeyword.replaceKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 111,
+      "symbol": "ADSQLKeyword.restrictKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 112,
+      "symbol": "ADSQLKeyword.rightKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 113,
+      "symbol": "ADSQLKeyword.rollbackKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 114,
+      "symbol": "ADSQLKeyword.rowKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 115,
+      "symbol": "ADSQLKeyword.rowIDKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 116,
+      "symbol": "ADSQLKeyword.savePointKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 117,
+      "symbol": "ADSQLKeyword.selectKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 118,
+      "symbol": "ADSQLKeyword.setKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 119,
+      "symbol": "ADSQLKeyword.tableKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 120,
+      "symbol": "ADSQLKeyword.tempKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 121,
+      "symbol": "ADSQLKeyword.temporaryKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 122,
+      "symbol": "ADSQLKeyword.thenKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 123,
+      "symbol": "ADSQLKeyword.toKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 124,
+      "symbol": "ADSQLKeyword.transactionKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 125,
+      "symbol": "ADSQLKeyword.triggerKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 126,
+      "symbol": "ADSQLKeyword.unionKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 127,
+      "symbol": "ADSQLKeyword.uniqueKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 128,
+      "symbol": "ADSQLKeyword.updateKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 129,
+      "symbol": "ADSQLKeyword.usingKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 130,
+      "symbol": "ADSQLKeyword.vacuumKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 131,
+      "symbol": "ADSQLKeyword.valuesKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 132,
+      "symbol": "ADSQLKeyword.viewKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 133,
+      "symbol": "ADSQLKeyword.virtualKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 134,
+      "symbol": "ADSQLKeyword.whenKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 135,
+      "symbol": "ADSQLKeyword.whereKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 136,
+      "symbol": "ADSQLKeyword.withKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 137,
+      "symbol": "ADSQLKeyword.withoutKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 140,
+      "symbol": "ADSQLKeyword.emptyStringKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 141,
+      "symbol": "ADSQLKeyword.semicolon",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 142,
+      "symbol": "ADSQLKeyword.openParenthesis",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 143,
+      "symbol": "ADSQLKeyword.closedParenthesis",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 144,
+      "symbol": "ADSQLKeyword.comma",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 145,
+      "symbol": "ADSQLKeyword.equal",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 146,
+      "symbol": "ADSQLKeyword.notEqual",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 147,
+      "symbol": "ADSQLKeyword.lessThan",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 148,
+      "symbol": "ADSQLKeyword.greaterThan",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 149,
+      "symbol": "ADSQLKeyword.lessThanOrEqualTo",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 150,
+      "symbol": "ADSQLKeyword.greaterThanOrEqualTo",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 151,
+      "symbol": "ADSQLKeyword.plus",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 152,
+      "symbol": "ADSQLKeyword.minus",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 153,
+      "symbol": "ADSQLKeyword.asterisk",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Enumerations/ADSQLKeyword.swift",
+      "line": 154,
+      "symbol": "ADSQLKeyword.forwardSlash",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Expressions/ADSQLUnaryExpression.swift",
+      "line": 38,
+      "symbol": "ADSQLUnaryExpression.init(operation:value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Expressions/ADSQLWhenExpression.swift",
+      "line": 22,
+      "symbol": "ADSQLWhenExpression.init(whenValue:thenValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Instructions/ADSQLInsertInstruction.swift",
+      "line": 18,
+      "symbol": "ADSQLInsertInstruction.Action",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/Instructions/ADSQLUpdateInstruction.swift",
+      "line": 18,
+      "symbol": "ADSQLUpdateInstruction.Action",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/SharedElements/ADSQLOrderByClause.swift",
+      "line": 37,
+      "symbol": "ADSQLOrderByClause.init(on:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionSQLParser/SharedElements/ADSQLResultColumn.swift",
+      "line": 23,
+      "symbol": "ADSQLResultColumn.init(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData"
+}
