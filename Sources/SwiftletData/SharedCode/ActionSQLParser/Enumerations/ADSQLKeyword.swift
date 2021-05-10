@@ -1,0 +1,173 @@
+//
+//  ADSQLKeyword.swift
+//  ActionControls
+//
+//  Created by Kevin Mullins on 10/19/17.
+//  Copyright © 2017 Appracatappra, LLC. All rights reserved.
+//
+
+import Foundation
+
+/// Contains a list of all valid SQL keywords that the `ADSQLParser` can understand.
+public enum ADSQLKeyword: String {
+    case abortKey = "ABORT"
+    case actionKey = "ACTION"
+    case addKey = "ADD"
+    case afterKey = "AFTER"
+    case allKey = "ALL"
+    case alterKey = "ALTER"
+    case analyzeKey = "ANALYZE"
+    case andKey = "AND"
+    case asKey = "AS"
+    case ascKey = "ASC"
+    case attachKey = "ATTACH"
+    case autoIncrementKey = "AUTOINCREMENT"
+    case beforeKey = "BEFORE"
+    case beginKey = "BEGIN"
+    case betweenKey = "BETWEEN"
+    case byKey = "BY"
+    case cascadeKey = "CASCADE"
+    case caseKey = "CASE"
+    case castKey = "CAST"
+    case checkKey = "CHECK"
+    case collateKey = "COLLATE"
+    case columnKey = "COLUMN"
+    case commitKey = "COMMIT"
+    case conflictKey = "COMFLICT"
+    case constraintKey = "CONSTRAINT"
+    case createKey = "CREATE"
+    case crossKey = "CROSS"
+    case currentDateKey = "CURRENT_DATE"
+    case currentTimeKey = "CURRENT_TIME"
+    case currentTimestampKey = "CURRENT_TIMESTAMP"
+    case databaseKey = "DATABASE"
+    case defaultKey = "DEFAULT"
+    case deferrableKey = "DEFERRABLE"
+    case deferredKey = "DEFERRED"
+    case deleteKey = "DELETE"
+    case descKey = "DESC"
+    case detachKey = "DETACH"
+    case distinctKey = "DISTINCT"
+    case dropKey = "DROP"
+    case eachKey = "EACH"
+    case elseKey = "ELSE"
+    case endKey = "END"
+    case escapeKey = "ESCAPE"
+    case exceptKey = "EXCEPT"
+    case exclusiveKey = "EXCLUSIVE"
+    case existsKey = "EXISTS"
+    case explainKey = "EXPLAIN"
+    case failKey = "FAIL"
+    case forKey = "FOR"
+    case foreignKey = "FOREIGN"
+    case fromKey = "FROM"
+    case fullKey = "FULL"
+    case globKey = "GLOB"
+    case groupKey = "GROUP"
+    case havingKey = "HAVING"
+    case ifKey = "IF"
+    case ignoreKey = "IGNORE"
+    case immediateKey = "IMMEDIATE"
+    case inKey = "IN"
+    case indexKey = "INDEX"
+    case indexedKey = "INDEXED"
+    case initiallyKey = "INITIALLY"
+    case innerKey = "INNER"
+    case insertKey = "INSERT"
+    case insteadKey = "INSTEAD"
+    case intersectKey = "INTERSECT"
+    case intoKey = "INTO"
+    case isKey = "IS"
+    case isNullKey = "ISNULL"
+    case joinKey = "JOIN"
+    case keyKey = "KEY"
+    case leftKey = "LEFT"
+    case likeKey = "LIKE"
+    case limitKey = "LIMIT"
+    case matchKey = "MATCH"
+    case naturalKey = "NATURAL"
+    case noKey = "NO"
+    case notKey = "NOT"
+    case notNullKey = "NOTNULL"
+    case nullKey = "NULL"
+    case ofKey = "OF"
+    case offsetKey = "OFFSET"
+    case onKey = "ON"
+    case orKey = "OR"
+    case orderKey = "ORDER"
+    case outerKey = "OUTER"
+    case planKey = "PLAN"
+    case pragmaKey = "PRAGMA"
+    case primaryKey = "PRIMARY"
+    case queryKey = "QUERY"
+    case raiseKey = "RAISE"
+    case recursiveKey = "RECURSIVE"
+    case referencesKey = "REFERENCES"
+    case regexpKey = "REGEXP"
+    case reindexKey = "REINDEX"
+    case releaseKey = "RELEASE"
+    case renameKey = "RENAME"
+    case replaceKey = "REPLACE"
+    case restrictKey = "RESTRICT"
+    case rightKey = "RIGHT"
+    case rollbackKey = "ROLLBACK"
+    case rowKey = "ROW"
+    case rowIDKey = "ROWID"
+    case savePointKey = "SAVEPOINT"
+    case selectKey = "SELECT"
+    case setKey = "SET"
+    case tableKey = "TABLE"
+    case tempKey = "TEMP"
+    case temporaryKey = "TEMPORARY"
+    case thenKey = "THEN"
+    case toKey = "TO"
+    case transactionKey = "TRANSACTION"
+    case triggerKey = "TRIGGER"
+    case unionKey = "UNION"
+    case uniqueKey = "UNIQUE"
+    case updateKey = "UPDATE"
+    case usingKey = "USING"
+    case vacuumKey = "VACUUM"
+    case valuesKey = "VALUES"
+    case viewKey = "VIEW"
+    case virtualKey = "VIRTUAL"
+    case whenKey = "WHEN"
+    case whereKey = "WHERE"
+    case withKey = "WITH"
+    case withoutKey = "WITHOUT"
+    
+    // MARK: - Special Parser Keywords
+    case emptyStringKey = "EMPTY_STRING"
+    case semicolon = ";"
+    case openParenthesis = "("
+    case closedParenthesis = ")"
+    case comma = ","
+    case equal = "="
+    case notEqual = "!="
+    case lessThan = "<"
+    case greaterThan = ">"
+    case lessThanOrEqualTo = "<="
+    case greaterThanOrEqualTo = ">="
+    case plus = "+"
+    case minus = "-"
+    case asterisk = "*"
+    case forwardSlash = "/"
+    
+    // MARK: - Static Functions
+    /**
+     Attempts to convert the given string value into a SQL keyword.
+     - Parameter text: The string containing the possible keyword.
+     - Returns: The matching `ADSQLKeyword` if found, else returns `nil`.
+     */
+    static func get(fromString text: String) -> ADSQLKeyword? {
+        
+        // Is this an empty string?
+        if text == "" {
+            // Yes, return the semicolon to signify End-Of-Line.
+            return .semicolon
+        }
+        
+        let value = text.uppercased()
+        return ADSQLKeyword(rawValue: value)
+    }
+}
