@@ -1,14 +1,12 @@
 # Swiftlet Data for Swift and SwiftUI
 
-![](https://img.shields.io/badge/license-MIT-green) ![](https://img.shields.io/badge/maintained%3F-Yes-green) ![](https://img.shields.io/badge/iOS-13.0-red) ![](https://img.shields.io/badge/macOS-10.15-red) ![](https://img.shields.io/badge/tvOS-13.0-red) ![](https://img.shields.io/badge/watchOS-6.0-red) ![](https://img.shields.io/badge/release-v1.0.0-blue)
+![](https://img.shields.io/badge/license-MIT-green) ![](https://img.shields.io/badge/maintained%3F-Yes-green) ![](https://img.shields.io/badge/swift-5.4-green) ![](https://img.shields.io/badge/iOS-13.0-red) ![](https://img.shields.io/badge/macOS-10.15-red) ![](https://img.shields.io/badge/tvOS-13.0-red) ![](https://img.shields.io/badge/watchOS-6.0-red) ![](https://img.shields.io/badge/release-v1.0.6-blue)
 
 **Swiftlet Data** is a suite of backend controls designed to quickly and easily add support for several common databases and data formats (such as SQLite, JSON, XML and CloudKit) to your app.
 
- > NOTE: **Swiftlet Data** is a replacement for our [Action Data](https://github.com/Appracatappra/ActionData) library specifically designed to work with **SwiftUI**.
+ > NOTE: **Swiftlet Data** is a replacement for our [Action Data](https://github.com/Appracatappra/ActionData) library specifically designed to work with **SwiftUI**. Several other features have been modernized and improved as well.
 
 **Swiftlet Data** provides both light weight, low-level access to the data sources along with high level **Object Relationship Management** (ORM) support (using Swift's `Codable`, `Encodable` and `Decodable` protocols.
-
-Created by developers, for developers. Appracatappra's controls are designed to be quickly added to your app's project with a minimum of code and effort, making it easy to add high-quality, professional features and functionality to your app without having to write tons of repetitive, boilerplate code.
 
 <a name="Installation"></a>
 ## Installation
@@ -25,21 +23,13 @@ Supporting multiple dependency managers makes maintaining a library exponentiall
 
 Since, the **Swift Package Manager** is integrated with Xcode 11 (and greater), it's the easiest choice to support going further.
 
-## Using Swiftlet Data
-
-**Swiftlet Data** requires the **Swiftlet Utilities** framework to be added to your project as well. The easiest way to accomplish this download the source code for both frameworks from GitHub and drag the `SwiftletUtilities.xcodeproj` and `SwiftletData.xcodeproj` project files under your project's hierarchy in Xcode.
-
-Additionally you should add the `SwiftletData.framework` and `SwiftletUtilities.framework` files to the your project's **Embedded Binaries** under the **General** tab in Xcode:
-
-![](Images/Install01.png)
-
 ## What's Included
 
 **Swiftlet Data** adds the following functionality:
 
 * [Action Codable](#Action-Codable) - Uses Swift's  `Codable`, `Encodable` and `Decodable` protocols to move information between your data models and our portable `ADRecord` and `ADRecordSet` formats.
 	* [Swift Portable Object Notation](#Swift-Portable-Object-Notation) - The new **Swift Portable Object Notation** (SPON) data format that allows complex data models to be encoded in a portable text string that encodes not only property keys and data, but also includes type information about the encoded data.
-* [Swiftlet Data Providers](#Action-Data-Providers) - Provides light weight, low-level access and high-level **Object Relationship Management** (ORM) support to several common databases and data formats such as SQLite, JSON, XML, SPON and CloudKit.
+* [Swiftlet Data Providers](#Action-Data-Providers) - Provides light weight, low-level access and high-level **Object Relationship Management** (ORM) support to several common databases and data formats such as SQLite, SPON and CloudKit.
 * [Action SQL Parser](#Action-SQL-Parser) - Provides the ability to parse text containing one or more SQL commands into an **Swiftlet Data SQL Document Object Model** (DOM) and is used to provide SQL support for data sources that don't support SQL natively (such as CloudKit and JSON).
 * [More Documentation](#More-Documentation-and-Use-Examples) - Visit the Appracatappra website for more information on Swiftlet Data and how to use it.
 
