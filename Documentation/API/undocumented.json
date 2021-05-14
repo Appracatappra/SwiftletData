@@ -2,14 +2,7 @@
   "warnings": [
     {
       "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionDataProviders/ADiCloudProvider.swift",
-      "line": 13,
-      "symbol": "ADiCloudProvider",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kmullins/Xcode Projects/GitHub/SwiftletData/Sources/SwiftletData/SharedCode/ActionDataProviders/ADiCloudProvider.swift",
-      "line": 211,
+      "line": 252,
       "symbol": "ADiCloudProvider.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

@@ -36,6 +36,59 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
+            <a href="Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="adp-enumerations.html">ADP Enumerations</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="adp-protocols.html">ADP Protocols</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="adp-shared-elements.html">ADP Shared Elements</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="asp-enumerations.html">ASP Enumerations</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="asp-expressions.html">ASP Expressions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="asp-instructions.html">ASP Instructions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="asp-protocols.html">ASP Protocols</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="asp-shared-elements.html">ASP Shared Elements</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="action-data-providers.html">Action Data Providers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="action-sql-parser.html">Action SQL Parser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="spon-codeable.html">SPON Codeable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="spon-decodable.html">SPON Decodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="spon-encodable.html">SPON Encodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="sqlite-codeable.html">SQLite Codeable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="sqlite-decodable.html">SQLite Decodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="sqlite-encodeable.html">SQLite Encodeable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
@@ -328,17 +381,38 @@
             
             <h1 id='swiftlet-data-for-swift-and-swiftui' class='heading'>Swiftlet Data for Swift and SwiftUI</h1>
 
-<p><img src="https://img.shields.io/badge/license-MIT-green" alt=""> <img src="https://img.shields.io/badge/maintained%3F-Yes-green" alt=""> <img src="https://img.shields.io/badge/iOS-13.0-red" alt=""> <img src="https://img.shields.io/badge/macOS-10.15-red" alt=""> <img src="https://img.shields.io/badge/tvOS-13.0-red" alt=""> <img src="https://img.shields.io/badge/watchOS-6.0-red" alt=""> <img src="https://img.shields.io/badge/release-v1.0.0-blue" alt=""></p>
+<p><img src="https://img.shields.io/badge/license-MIT-green" alt=""> <img src="https://img.shields.io/badge/maintained%3F-Yes-green" alt=""> <img src="https://img.shields.io/badge/swift-5.4-green" alt=""> <img src="https://img.shields.io/badge/iOS-13.0-red" alt=""> <img src="https://img.shields.io/badge/macOS-10.15-red" alt=""> <img src="https://img.shields.io/badge/tvOS-13.0-red" alt=""> <img src="https://img.shields.io/badge/watchOS-6.0-red" alt=""> <img src="https://img.shields.io/badge/release-v1.0.7-blue" alt=""></p>
 
-<p><strong>Swiftlet Data</strong> is a suite of backend controls designed to quickly and easily add support for several common databases and data formats (such as SQLite, JSON, XML and CloudKit) to your app.</p>
+<p><strong>Swiftlet Data</strong> is a suite of backend tools designed to quickly and easily add support for several common databases and data formats (such as <strong>SQLite</strong>, <strong>SPON</strong> and <strong>CloudKit</strong>) to your app.</p>
 
 <blockquote>
-<p>NOTE: <strong>Swiftlet Data</strong> is a replacement for our <a href="https://github.com/Appracatappra/ActionData">Action Data</a> library specifically designed to work with <strong>SwiftUI</strong>.</p>
+<p>NOTE: <strong>Swiftlet Data</strong> is a replacement for our <a href="https://github.com/Appracatappra/ActionData">Action Data</a> library specifically designed to work with <strong>SwiftUI</strong>. Several other features have been modernized and improved as well.</p>
 </blockquote>
 
-<p><strong>Swiftlet Data</strong> provides both light weight, low-level access to the data sources along with high level <strong>Object Relationship Management</strong> (ORM) support (using Swift&rsquo;s <code>Codable</code>, <code>Encodable</code> and <code>Decodable</code> protocols.</p>
+<p><strong>Swiftlet Data</strong> provides both light weight, low-level access to the data sources along with high level <strong>Object Relationship Management</strong> (ORM) support (using Swift&rsquo;s <code>Codable</code>, <code>Encodable</code> and <code>Decodable</code> protocols. </p>
 
-<p>Created by developers, for developers. Appracatappra&rsquo;s controls are designed to be quickly added to your app&rsquo;s project with a minimum of code and effort, making it easy to add high-quality, professional features and functionality to your app without having to write tons of repetitive, boilerplate code.</p>
+<p>Simply create a <code>Class</code> to hold your data and conform it to <code><a href="Protocols/ADDataTable.html">ADDataTable</a></code>. After you open a datasource from the required type of provider (<strong>SQLite</strong>, <strong>iCloud</strong> or <strong>SPON</strong>), use ORM functionality to quickly <strong>Save</strong>, <strong>Update</strong> or <strong>Query</strong> data. All without the overhead or hassle of having to learn <strong>Core Data</strong>.</p>
+
+<p>For example, if you had an instance of class <code>Category</code> that conforms to <code><a href="Protocols/ADDataTable.html">ADDataTable</a></code> the following single line of code would create (or update the schema) of the required tables and write the values from the class into the table as a new record:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">category</span> <span class="o">=</span> <span class="kt">Category</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+
+<span class="c1">// Save data to currently open SQLite database.</span>
+<span class="kt">ADSQLiteProvider</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">save</span><span class="p">(</span><span class="n">category</span><span class="p">)</span>
+</code></pre>
+
+<p>And the following would do the same thing in iCloud using <code>CloudKit</code>:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">category</span> <span class="o">=</span> <span class="kt">Category</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+
+<span class="c1">// Save data to the user's private iCloud data store.</span>
+<span class="kt">ADiCloudProvider</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">save</span><span class="p">(</span><span class="n">category</span><span class="p">)</span>
+</code></pre>
+
+<p>You also have the option of saving to the Public iCloud Container visible by all user&rsquo;s of your app:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">category</span> <span class="o">=</span> <span class="kt">Category</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+
+<span class="c1">// Save data to the public iCloud data store.</span>
+<span class="kt">ADiCloudProvider</span><span class="o">.</span><span class="n">sharedPublic</span><span class="o">.</span><span class="nf">save</span><span class="p">(</span><span class="n">category</span><span class="p">)</span>
+</code></pre>
 
 <p><a name="Installation"></a></p>
 <h2 id='installation' class='heading'>Installation</h2>
@@ -358,13 +432,6 @@
 <p>Supporting multiple dependency managers makes maintaining a library exponentially more complicated and time consuming.</p>
 
 <p>Since, the <strong>Swift Package Manager</strong> is integrated with Xcode 11 (and greater), it&rsquo;s the easiest choice to support going further.</p>
-<h2 id='using-swiftlet-data' class='heading'>Using Swiftlet Data</h2>
-
-<p><strong>Swiftlet Data</strong> requires the <strong>Swiftlet Utilities</strong> framework to be added to your project as well. The easiest way to accomplish this download the source code for both frameworks from GitHub and drag the <code>SwiftletUtilities.xcodeproj</code> and <code>SwiftletData.xcodeproj</code> project files under your project&rsquo;s hierarchy in Xcode.</p>
-
-<p>Additionally you should add the <code>SwiftletData.framework</code> and <code>SwiftletUtilities.framework</code> files to the your project&rsquo;s <strong>Embedded Binaries</strong> under the <strong>General</strong> tab in Xcode:</p>
-
-<p><img src="Images/Install01.png" alt=""></p>
 <h2 id='what-39-s-included' class='heading'>What&rsquo;s Included</h2>
 
 <p><strong>Swiftlet Data</strong> adds the following functionality:</p>
@@ -375,20 +442,19 @@
 <ul>
 <li><a href="#Swift-Portable-Object-Notation">Swift Portable Object Notation</a> - The new <strong>Swift Portable Object Notation</strong> (SPON) data format that allows complex data models to be encoded in a portable text string that encodes not only property keys and data, but also includes type information about the encoded data.</li>
 </ul></li>
-<li><a href="#Action-Data-Providers">Swiftlet Data Providers</a> - Provides light weight, low-level access and high-level <strong>Object Relationship Management</strong> (ORM) support to several common databases and data formats such as SQLite, JSON, XML, SPON and CloudKit.</li>
+<li><a href="#Action-Data-Providers">Swiftlet Data Providers</a> - Provides light weight, low-level access and high-level <strong>Object Relationship Management</strong> (ORM) support to several common databases and data formats such as SQLite, SPON and CloudKit.</li>
 <li><a href="#Action-SQL-Parser">Action SQL Parser</a> - Provides the ability to parse text containing one or more SQL commands into an <strong>Swiftlet Data SQL Document Object Model</strong> (DOM) and is used to provide SQL support for data sources that don&rsquo;t support SQL natively (such as CloudKit and JSON).</li>
-<li><a href="#More-Documentation-and-Use-Examples">More Documentation</a> - Visit the Appracatappra website for more information on Swiftlet Data and how to use it.</li>
 </ul>
 
 <p><a name="Action-Codable"></a></p>
 <h2 id='action-codable' class='heading'>Action Codable</h2>
 
-<p><strong>Action Codable</strong> controls provide support for several common databases and data formats such as SQLite, JSON, XML and CloudKit using Swift 4&rsquo;s new <code>Codable</code>, <code>Encodable</code> and <code>Decodable</code> protocols to move information between your data models and our portable <code><a href="Typealiases.html#/s:12SwiftletData8ADRecorda">ADRecord</a></code> and <code><a href="Typealiases.html#/s:12SwiftletData11ADRecordSeta">ADRecordSet</a></code> formats.</p>
+<p><strong>Action Codable</strong> controls provide support for several common databases and data formats such as <strong>SQLite</strong>, <strong>SPON</strong> and <strong>CloudKit</strong> using Swift&rsquo;s <code>Codable</code>, <code>Encodable</code> and <code>Decodable</code> protocols to move information between your data models and our portable <code><a href="Typealiases.html#/s:12SwiftletData8ADRecorda">ADRecord</a></code> and <code><a href="Typealiases.html#/s:12SwiftletData11ADRecordSeta">ADRecordSet</a></code> formats.</p>
 
 <p>With <strong>Action Codable</strong> and <strong>Swiftlet Data Providers</strong>, build your data model objects as simple <code>struct</code> or <code>class</code> objects and inherit from <code><a href="Protocols/ADDataTable.html">ADDataTable</a></code>, then use <strong>Action Controls</strong> to quickly create, insert, update, delete and maintain the tables and records in the underlying data source. For example:</p>
 <pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Foundation</span>
-<span class="kd">import</span> <span class="kt">ActionUtilities</span>
-<span class="kd">import</span> <span class="kt">ActionData</span>
+<span class="kd">import</span> <span class="kt">SwiftletUtilities</span>
+<span class="kd">import</span> <span class="kt">SwiftletData</span>
 
 <span class="kd">class</span> <span class="kt">Category</span><span class="p">:</span> <span class="kt">ADDataTable</span> <span class="p">{</span>
 
@@ -418,8 +484,8 @@
 
 <p>This includes support for complex tables with nested objects, arrays and dictionaries and complex relationships such as one-to-one, one-to-many and many-to-many. For example:</p>
 <pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Foundation</span>
-<span class="kd">import</span> <span class="kt">ActionUtilities</span>
-<span class="kd">import</span> <span class="kt">ActionData</span>
+<span class="kd">import</span> <span class="kt">SwiftletUtilities</span>
+<span class="kd">import</span> <span class="kt">SwiftletData</span>
 
 <span class="kd">struct</span> <span class="kt">Address</span><span class="p">:</span> <span class="kt">Codable</span> <span class="p">{</span>
     <span class="k">var</span> <span class="nv">addr1</span> <span class="o">=</span> <span class="s">""</span>
@@ -495,7 +561,7 @@
 <p><a name="Action-Data-Providers"></a></p>
 <h3 id='swiftlet-data-providers' class='heading'>Swiftlet Data Providers</h3>
 
-<p><strong>Swiftlet Data Providers</strong> provide light weight, low-level access to several common databases and data formats such as SQLite, JSON, XML, SPON and CloudKit. Results are returned as a key/value dictionary (<code><a href="Typealiases.html#/s:12SwiftletData8ADRecorda">ADRecord</a></code>) or as an array of key/value dictionaries (<code><a href="Typealiases.html#/s:12SwiftletData11ADRecordSeta">ADRecordSet</a></code>). For example:</p>
+<p><strong>Swiftlet Data Providers</strong> provide light weight, low-level access to several common databases and data formats such as <strong>SQLite</strong>, <strong>SPON</strong> and <strong>CloudKit</strong>. Results are returned as a key/value dictionary (<code><a href="Typealiases.html#/s:12SwiftletData8ADRecorda">ADRecord</a></code>) or as an array of key/value dictionaries (<code><a href="Typealiases.html#/s:12SwiftletData11ADRecordSeta">ADRecordSet</a></code>). For example:</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">provider</span> <span class="o">=</span> <span class="kt">ADSQLiteProvider</span><span class="o">.</span><span class="n">shared</span>
 <span class="k">let</span> <span class="nv">record</span> <span class="o">=</span> <span class="k">try</span> <span class="n">provider</span><span class="o">.</span><span class="nf">query</span><span class="p">(</span><span class="s">"SELECT * FROM Categories WHERE id = ?"</span><span class="p">,</span> <span class="nv">withParameters</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 <span class="nf">print</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s">"name"</span><span class="p">])</span>
@@ -514,22 +580,20 @@
 
 <p>Creates the <code>People</code>, <code>Group</code> and <code>PeopleInGroups</code> SQLite database tables (if required) and inserts the new record instances, with relationships, into the database. For example:</p>
 
-<p><img src="Images/Intro01.png" alt=""></p>
+<p><img src="Documentation/Images/Intro01.png" alt=""></p>
 
 <p>To retrieve the <code>Group</code> from the database, use the following:</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">group</span> <span class="o">=</span> <span class="k">try</span> <span class="n">provider</span><span class="o">.</span><span class="nf">getRow</span><span class="p">(</span><span class="nv">ofType</span><span class="p">:</span> <span class="kt">Group</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">forPrimaryKeyValue</span><span class="p">:</span> <span class="s">"F6DEC3CD-DA62-4A08-A2B6-272E62A7F6E3"</span><span class="p">)</span>
 </code></pre>
 
-<p>The <strong>Swiftlet Data Providers</strong> are designed to be interchangeable, so you can start developing locally using a SQLite database and a <code><a href="Classes/ADSQLiteProvider.html">ADSQLiteProvider</a></code>, then later switch to CloudKit and a <code>ADCloudKitProvider</code> without have to change any of your other code.</p>
+<p>The <strong>Swiftlet Data Providers</strong> are designed to be interchangeable, so you can start developing locally using a SQLite database and a <code><a href="Classes/ADSQLiteProvider.html">ADSQLiteProvider</a></code>, then later switch to CloudKit and a <code><a href="Classes/ADiCloudProvider.html">ADiCloudProvider</a></code> without have to change any of your other code.</p>
 
-<p>Additionally, <strong>Swiftlet Data Providers</strong> can be used to move data from one source to another. For example, download data from the web in JSON using a <code>ADJSONProvider</code> and save it to a local SQLite database using a <code><a href="Classes/ADSQLiteProvider.html">ADSQLiteProvider</a></code>, all with a minimal of code.</p>
-
-<p>Several of our <strong>Action Controls</strong> are designed to take an <strong>Swiftlet Data Provider</strong> as input (such as <strong>ActionTable</strong>), making it easy to work with complex data and common display and input methodologies that would typically require tons of repetitive, boilerplate code.</p>
+<p>Additionally, <strong>Swiftlet Data Providers</strong> can be used to move data from one source to another. For example, download data from the web in JSON  and save it to a local SQLite database using a <code><a href="Classes/ADSQLiteProvider.html">ADSQLiteProvider</a></code>, all with a minimal of code.</p>
 
 <p><a name="Action-SQL-Parser"></a></p>
 <h2 id='action-sql-parser' class='heading'>Action SQL Parser</h2>
 
-<p>The <code><a href="Classes/ADSQLParser.html">ADSQLParser</a></code> provides the ability to parse text containing one or more SQL commands into an <strong>Swiftlet Data SQL Document Object Model</strong> (DOM) and is used to provide SQL support for data sources that don&rsquo;t support SQL natively (such as CloudKit and JSON).</p>
+<p>The <code><a href="Classes/ADSQLParser.html">ADSQLParser</a></code> provides the ability to parse text containing one or more SQL commands into an <strong>Swiftlet Data SQL Document Object Model</strong> (DOM) and is used to provide SQL support for data sources that don&rsquo;t support SQL natively (such as <strong>CloudKit</strong>).</p>
 
 <p>The <code><a href="Classes/ADSQLParser.html">ADSQLParser</a></code> uses SQLite&rsquo;s SQL syntax and currently support a subset of the full SQL language. For example:</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">sql</span> <span class="o">=</span> <span class="s">"""
@@ -548,7 +612,7 @@ CREATE TABLE IF NOT EXISTS parts
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external">Appracatappra, LLC</a>. All rights reserved. (Last updated: 2021-05-10)</p>
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external">Appracatappra, LLC</a>. All rights reserved. (Last updated: 2021-05-14)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

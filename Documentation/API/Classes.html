@@ -37,6 +37,59 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
+            <a href="Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="adp-enumerations.html">ADP Enumerations</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="adp-protocols.html">ADP Protocols</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="adp-shared-elements.html">ADP Shared Elements</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="asp-enumerations.html">ASP Enumerations</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="asp-expressions.html">ASP Expressions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="asp-instructions.html">ASP Instructions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="asp-protocols.html">ASP Protocols</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="asp-shared-elements.html">ASP Shared Elements</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="action-data-providers.html">Action Data Providers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="action-sql-parser.html">Action SQL Parser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="spon-codeable.html">SPON Codeable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="spon-decodable.html">SPON Decodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="spon-encodable.html">SPON Encodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="sqlite-codeable.html">SQLite Codeable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="sqlite-decodable.html">SQLite Decodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="sqlite-encodeable.html">SQLite Encodeable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
@@ -806,7 +859,44 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The <code>ADiCloudProvider</code> provides both light-weight, low-level access to data stored in a iCloud Database Container (public or private) and high-level access via a <strong>Object Relationship Management</strong> (ORM) model. Use provided functions to read and write data stored in a <code><a href="Typealiases.html#/s:12SwiftletData8ADRecorda">ADRecord</a></code> format from and to the database using SQL like statements directly.</p>
+
+<p>Optionally, pass a class instance conforming to the <code><a href="Protocols/ADDataTable.html">ADDataTable</a></code> protocol to the <code>ADiCloudProvider</code> and it will automatically handle reading, writing and deleting data as required.</p>
+<h3 id='example' class='heading'>Example:</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">addr1</span> <span class="o">=</span> <span class="kt">Address</span><span class="p">(</span><span class="nv">addr1</span><span class="p">:</span> <span class="s">"PO Box 1234"</span><span class="p">,</span> <span class="nv">addr2</span><span class="p">:</span> <span class="s">""</span><span class="p">,</span> <span class="nv">city</span><span class="p">:</span> <span class="s">"Houston"</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="s">"TX"</span><span class="p">,</span> <span class="nv">zip</span><span class="p">:</span> <span class="s">"77012"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">addr2</span> <span class="o">=</span> <span class="kt">Address</span><span class="p">(</span><span class="nv">addr1</span><span class="p">:</span> <span class="s">"25 Nasa Rd 1"</span><span class="p">,</span> <span class="nv">addr2</span><span class="p">:</span> <span class="s">"Apt #123"</span><span class="p">,</span> <span class="nv">city</span><span class="p">:</span> <span class="s">"Seabrook"</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="s">"TX"</span><span class="p">,</span> <span class="nv">zip</span><span class="p">:</span> <span class="s">"77586"</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">p1</span> <span class="o">=</span> <span class="kt">Person</span><span class="p">(</span><span class="nv">firstName</span><span class="p">:</span> <span class="s">"John"</span><span class="p">,</span> <span class="nv">lastName</span><span class="p">:</span> <span class="s">"Doe"</span><span class="p">,</span> <span class="nv">addresses</span><span class="p">:</span> <span class="p">[</span><span class="s">"home"</span><span class="p">:</span><span class="n">addr1</span><span class="p">,</span> <span class="s">"work"</span><span class="p">:</span><span class="n">addr2</span><span class="p">])</span>
+<span class="k">let</span> <span class="nv">p2</span> <span class="o">=</span> <span class="kt">Person</span><span class="p">(</span><span class="nv">firstName</span><span class="p">:</span> <span class="s">"Sue"</span><span class="p">,</span> <span class="nv">lastName</span><span class="p">:</span> <span class="s">"Smith"</span><span class="p">,</span> <span class="nv">addresses</span><span class="p">:</span> <span class="p">[</span><span class="s">"home"</span><span class="p">:</span><span class="n">addr1</span><span class="p">,</span> <span class="s">"work"</span><span class="p">:</span><span class="n">addr2</span><span class="p">])</span>
+
+<span class="k">let</span> <span class="nv">group</span> <span class="o">=</span> <span class="kt">Group</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Employees"</span><span class="p">,</span> <span class="nv">people</span><span class="p">:</span> <span class="p">[</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">])</span>
+<span class="k">try</span> <span class="kt">ADiCloudProvider</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">save</span><span class="p">(</span><span class="n">group</span><span class="p">)</span>
+</code></pre>
+
+<p>The following would read the data back for any modified records after a given date/time from iCloud:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">timeOfLastCacheUpdate</span> <span class="o">=</span> <span class="kt">Date</span><span class="p">()</span>
+<span class="k">try</span> <span class="kt">ADiCloudProvider</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">loadRows</span><span class="p">(</span><span class="nv">ofType</span><span class="p">:</span> <span class="kt">Group</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">matchingQuery</span><span class="p">:</span> <span class="s">"modificationDate &gt;= %@"</span><span class="p">,</span> <span class="nv">sortBy</span><span class="p">:</span> <span class="s">"modificationDate"</span><span class="p">,</span> <span class="nv">withParameters</span><span class="p">:</span> <span class="p">[</span><span class="n">timeOfLastCacheUpdate</span><span class="p">])</span> <span class="p">{</span> <span class="n">records</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
+    <span class="c1">// Ensure the records were loaded</span>
+    <span class="k">guard</span> <span class="n">error</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Error loading the Groups: </span><span class="se">\(</span><span class="kt">String</span><span class="p">(</span><span class="nv">describing</span><span class="p">:</span> <span class="n">error</span><span class="p">)</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+        <span class="k">return</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Was a record returned?</span>
+    <span class="k">if</span> <span class="k">let</span> <span class="nv">records</span> <span class="o">=</span> <span class="n">records</span> <span class="p">{</span>
+        <span class="kt">DispatchQueue</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="n">async</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="n">record</span> <span class="k">in</span> <span class="n">records</span> <span class="p">{</span>
+                <span class="o">...</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    The <code>ADiCloudProvider</code> will automatically create any required iCloud Table Schemas from a class instance if one does not already exist. In addition, <code>ADiCloudProvider</code> contains routines to preregister or update the schema classes conforming to the <code><a href="Protocols/ADDataTable.html">ADDataTable</a></code> protocol which will build or modify the database schemas as required.
+
+</div>
 
                         <a href="Classes/ADiCloudProvider.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1346,7 +1436,7 @@ CREATE TABLE IF NOT EXISTS parts
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external">Appracatappra, LLC</a>. All rights reserved. (Last updated: 2021-05-10)</p>
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external">Appracatappra, LLC</a>. All rights reserved. (Last updated: 2021-05-14)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

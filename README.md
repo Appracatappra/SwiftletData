@@ -1,12 +1,41 @@
 # Swiftlet Data for Swift and SwiftUI
 
-![](https://img.shields.io/badge/license-MIT-green) ![](https://img.shields.io/badge/maintained%3F-Yes-green) ![](https://img.shields.io/badge/swift-5.4-green) ![](https://img.shields.io/badge/iOS-13.0-red) ![](https://img.shields.io/badge/macOS-10.15-red) ![](https://img.shields.io/badge/tvOS-13.0-red) ![](https://img.shields.io/badge/watchOS-6.0-red) ![](https://img.shields.io/badge/release-v1.0.6-blue)
+![](https://img.shields.io/badge/license-MIT-green) ![](https://img.shields.io/badge/maintained%3F-Yes-green) ![](https://img.shields.io/badge/swift-5.4-green) ![](https://img.shields.io/badge/iOS-13.0-red) ![](https://img.shields.io/badge/macOS-10.15-red) ![](https://img.shields.io/badge/tvOS-13.0-red) ![](https://img.shields.io/badge/watchOS-6.0-red) ![](https://img.shields.io/badge/release-v1.0.7-blue)
 
-**Swiftlet Data** is a suite of backend controls designed to quickly and easily add support for several common databases and data formats (such as SQLite, JSON, XML and CloudKit) to your app.
+**Swiftlet Data** is a suite of backend tools designed to quickly and easily add support for several common databases and data formats (such as **SQLite**, **SPON** and **CloudKit**) to your app.
 
  > NOTE: **Swiftlet Data** is a replacement for our [Action Data](https://github.com/Appracatappra/ActionData) library specifically designed to work with **SwiftUI**. Several other features have been modernized and improved as well.
 
-**Swiftlet Data** provides both light weight, low-level access to the data sources along with high level **Object Relationship Management** (ORM) support (using Swift's `Codable`, `Encodable` and `Decodable` protocols.
+**Swiftlet Data** provides both light weight, low-level access to the data sources along with high level **Object Relationship Management** (ORM) support (using Swift's `Codable`, `Encodable` and `Decodable` protocols. 
+
+Simply create a `Class` to hold your data and conform it to `ADDataTable`. After you open a datasource from the required type of provider (**SQLite**, **iCloud** or **SPON**), use ORM functionality to quickly **Save**, **Update** or **Query** data. All without the overhead or hassle of having to learn **Core Data**.
+
+For example, if you had an instance of class `Category` that conforms to `ADDataTable` the following single line of code would create (or update the schema) of the required tables and write the values from the class into the table as a new record:
+
+```swift
+let category = Category(...)
+
+// Save data to currently open SQLite database.
+ADSQLiteProvider.shared.save(category)
+```
+
+And the following would do the same thing in iCloud using `CloudKit`:
+
+```swift
+let category = Category(...)
+
+// Save data to the user's private iCloud data store.
+ADiCloudProvider.shared.save(category)
+```
+
+You also have the option of saving to the Public iCloud Container visible by all user's of your app:
+
+```swift
+let category = Category(...)
+
+// Save data to the public iCloud data store.
+ADiCloudProvider.sharedPublic.save(category)
+```
 
 <a name="Installation"></a>
 ## Installation
@@ -31,19 +60,18 @@ Since, the **Swift Package Manager** is integrated with Xcode 11 (and greater), 
 	* [Swift Portable Object Notation](#Swift-Portable-Object-Notation) - The new **Swift Portable Object Notation** (SPON) data format that allows complex data models to be encoded in a portable text string that encodes not only property keys and data, but also includes type information about the encoded data.
 * [Swiftlet Data Providers](#Action-Data-Providers) - Provides light weight, low-level access and high-level **Object Relationship Management** (ORM) support to several common databases and data formats such as SQLite, SPON and CloudKit.
 * [Action SQL Parser](#Action-SQL-Parser) - Provides the ability to parse text containing one or more SQL commands into an **Swiftlet Data SQL Document Object Model** (DOM) and is used to provide SQL support for data sources that don't support SQL natively (such as CloudKit and JSON).
-* [More Documentation](#More-Documentation-and-Use-Examples) - Visit the Appracatappra website for more information on Swiftlet Data and how to use it.
 
 <a name="Action-Codable"></a>
 ## Action Codable
  
-**Action Codable** controls provide support for several common databases and data formats such as SQLite, JSON, XML and CloudKit using Swift 4's new `Codable`, `Encodable` and `Decodable` protocols to move information between your data models and our portable `ADRecord` and `ADRecordSet` formats.
+**Action Codable** controls provide support for several common databases and data formats such as **SQLite**, **SPON** and **CloudKit** using Swift's `Codable`, `Encodable` and `Decodable` protocols to move information between your data models and our portable `ADRecord` and `ADRecordSet` formats.
  
 With **Action Codable** and **Swiftlet Data Providers**, build your data model objects as simple `struct` or `class` objects and inherit from `ADDataTable`, then use **Action Controls** to quickly create, insert, update, delete and maintain the tables and records in the underlying data source. For example:
 
 ```swift
 import Foundation
-import ActionUtilities
-import ActionData
+import SwiftletUtilities
+import SwiftletData
 
 class Category: ADDataTable {
     
@@ -75,8 +103,8 @@ This includes support for complex tables with nested objects, arrays and diction
 
 ```swift
 import Foundation
-import ActionUtilities
-import ActionData
+import SwiftletUtilities
+import SwiftletData
 
 struct Address: Codable {
     var addr1 = ""
@@ -150,7 +178,7 @@ Additionally, embedded arrays will be in the `@array[...]` format and embedded d
 <a name="Action-Data-Providers"></a>
 ### Swiftlet Data Providers
 
-**Swiftlet Data Providers** provide light weight, low-level access to several common databases and data formats such as SQLite, JSON, XML, SPON and CloudKit. Results are returned as a key/value dictionary (`ADRecord`) or as an array of key/value dictionaries (`ADRecordSet`). For example:
+**Swiftlet Data Providers** provide light weight, low-level access to several common databases and data formats such as **SQLite**, **SPON** and **CloudKit**. Results are returned as a key/value dictionary (`ADRecord`) or as an array of key/value dictionaries (`ADRecordSet`). For example:
 
 ```swift
 let provider = ADSQLiteProvider.shared
@@ -173,7 +201,7 @@ try provider.save(group)
 
 Creates the `People`, `Group` and `PeopleInGroups` SQLite database tables (if required) and inserts the new record instances, with relationships, into the database. For example:
 
-![](Images/Intro01.png)
+![](Documentation/Images/Intro01.png)
 
 To retrieve the `Group` from the database, use the following:
 
@@ -181,16 +209,14 @@ To retrieve the `Group` from the database, use the following:
 let group = try provider.getRow(ofType: Group.self, forPrimaryKeyValue: "F6DEC3CD-DA62-4A08-A2B6-272E62A7F6E3")
 ```
 
-The **Swiftlet Data Providers** are designed to be interchangeable, so you can start developing locally using a SQLite database and a `ADSQLiteProvider`, then later switch to CloudKit and a `ADCloudKitProvider` without have to change any of your other code.
+The **Swiftlet Data Providers** are designed to be interchangeable, so you can start developing locally using a SQLite database and a `ADSQLiteProvider`, then later switch to CloudKit and a `ADiCloudProvider` without have to change any of your other code.
 
-Additionally, **Swiftlet Data Providers** can be used to move data from one source to another. For example, download data from the web in JSON using a `ADJSONProvider` and save it to a local SQLite database using a `ADSQLiteProvider`, all with a minimal of code.
-
-Several of our **Action Controls** are designed to take an **Swiftlet Data Provider** as input (such as **ActionTable**), making it easy to work with complex data and common display and input methodologies that would typically require tons of repetitive, boilerplate code.
+Additionally, **Swiftlet Data Providers** can be used to move data from one source to another. For example, download data from the web in JSON  and save it to a local SQLite database using a `ADSQLiteProvider`, all with a minimal of code.
 
 <a name="Action-SQL-Parser"></a>
 ## Action SQL Parser
 
-The `ADSQLParser` provides the ability to parse text containing one or more SQL commands into an **Swiftlet Data SQL Document Object Model** (DOM) and is used to provide SQL support for data sources that don't support SQL natively (such as CloudKit and JSON).
+The `ADSQLParser` provides the ability to parse text containing one or more SQL commands into an **Swiftlet Data SQL Document Object Model** (DOM) and is used to provide SQL support for data sources that don't support SQL natively (such as **CloudKit**).
 
 The `ADSQLParser` uses SQLite's SQL syntax and currently support a subset of the full SQL language. For example:
 

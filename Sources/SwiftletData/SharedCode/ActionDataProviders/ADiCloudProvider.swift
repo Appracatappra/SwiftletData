@@ -10,6 +10,47 @@ import SwiftUI
 import SwiftletUtilities
 import CloudKit
 
+/**
+ The `ADiCloudProvider` provides both light-weight, low-level access to data stored in a iCloud Database Container (public or private) and high-level access via a **Object Relationship Management** (ORM) model. Use provided functions to read and write data stored in a `ADRecord` format from and to the database using SQL like statements directly.
+   
+ Optionally, pass a class instance conforming to the `ADDataTable` protocol to the `ADiCloudProvider` and it will automatically handle reading, writing and deleting data as required.
+  
+ ### Example:
+ ```swift
+ let addr1 = Address(addr1: "PO Box 1234", addr2: "", city: "Houston", state: "TX", zip: "77012")
+ let addr2 = Address(addr1: "25 Nasa Rd 1", addr2: "Apt #123", city: "Seabrook", state: "TX", zip: "77586")
+  
+ let p1 = Person(firstName: "John", lastName: "Doe", addresses: ["home":addr1, "work":addr2])
+ let p2 = Person(firstName: "Sue", lastName: "Smith", addresses: ["home":addr1, "work":addr2])
+  
+ let group = Group(name: "Employees", people: [p1, p2])
+ try ADiCloudProvider.shared.save(group)
+ ```
+
+ The following would read the data back for any modified records after a given date/time from iCloud:
+
+ ```swift
+ let timeOfLastCacheUpdate = Date()
+ try ADiCloudProvider.shared.loadRows(ofType: Group.self, matchingQuery: "modificationDate >= %@", sortBy: "modificationDate", withParameters: [timeOfLastCacheUpdate]) { records, error in
+     // Ensure the records were loaded
+     guard error == nil else {
+         print("Error loading the Groups: \(String(describing: error))")
+         return
+     }
+     
+     // Was a record returned?
+     if let records = records {
+         DispatchQueue.main.async {
+             for record in records {
+                 ...
+             }
+         }
+     }
+ }
+ ```
+
+ - Remark: The `ADiCloudProvider` will automatically create any required iCloud Table Schemas from a class instance if one does not already exist. In addition, `ADiCloudProvider` contains routines to preregister or update the schema classes conforming to the `ADDataTable` protocol which will build or modify the database schemas as required.
+ */
 open class ADiCloudProvider {
     
     // MARK: - Type Aliases
@@ -270,7 +311,7 @@ open class ADiCloudProvider {
     
     ## Example:
     ```swift
-    let lastID = try ADSPONProvider.shared.lastIntID(forTable: "Person", withKey: "ID")
+    let lastID = try ADiCloudProvider.shared.lastIntID(forTable: "Person", withKey: "ID")
     ```
     
     - Remark: This function works with integer primary keys that are not marked AUTOINCREMENT and is useful when the data being stored in a database needs to know the next available ID before a record has been saved.
@@ -363,7 +404,7 @@ open class ADiCloudProvider {
      
      ## Example:
      ```swift
-     var category = try ADSPONProvider.shared.make(Category.self)
+     var category = try ADiCloudProvider.shared.make(Category.self)
      ```
      
      - Parameter type: The class conforming to the `ADDataTable` protocol to create an instance of.
@@ -400,7 +441,7 @@ open class ADiCloudProvider {
      
      ## Example:
      ```swift
-     let id = ADSPONProvider.shared.makeID(Category.self) as! Int
+     let id = ADiCloudProvider.shared.makeID(Category.self) as! Int
      ```
      
      - Parameter type: The class conforming to the `ADDataTable` protocol to create primary key for.
@@ -457,7 +498,7 @@ open class ADiCloudProvider {
      
      ## Example:
      ```swift
-     try ADSQLiteProvider.shared.registerTableSchema(Category.self)
+     try ADiCloudProvider.shared.registerTableSchema(Category.self)
      ```
      
      - Remark: Classes are usually registered when an app first starts, directly after a database is opened.
@@ -505,12 +546,14 @@ open class ADiCloudProvider {
      ## Example:
      ```swift
      var category = Category()
-     try ADSPONProvider.shared.save(category)
+     try ADiCloudProvider.shared.save(category)
      ```
      
      - Parameter value: The class instance to save to the database.
+     - Parameter updateIfExists: If `true` and the save fails, attempt to do an `update` on the record instead.
+     - Parameter completionHandler: An optional handler to call after the save completes.
      */
-    public func save<T: ADDataTable>(_ value: T, completionHandler:CloudKitRecordCompletionHandler? = nil) throws {
+    public func save<T: ADDataTable>(_ value: T, updateIfExists:Bool = true, completionHandler:CloudKitRecordCompletionHandler? = nil) throws {
         let baseType = type(of: value)
         
         // Ensure the database is open
@@ -541,8 +584,18 @@ open class ADiCloudProvider {
                         // Pass info to caller.
                         handler(record, error)
                     } else if let err = error {
-                        // Report error
-                        print("Unable to save `\(cloudkitKey)` to \(baseType.tableName): \(err)")
+                        if updateIfExists {
+                            // Assume the failure happened because the record was already in the database and use the update function instead
+                            do {
+                                try self.update(value, completionHandler: completionHandler)
+                            } catch {
+                                // Report error
+                                print("Unable to save `\(cloudkitKey)` to \(baseType.tableName): \(err)")
+                            }
+                        } else {
+                            // Report error
+                            print("Unable to save `\(cloudkitKey)` to \(baseType.tableName): \(err)")
+                        }
                     }
                 }
             } else {
@@ -564,6 +617,7 @@ open class ADiCloudProvider {
      ```
      
      - Parameter value: The class instance to update in the database.
+     - Parameter completionHandler: An optional handler to call after the save completes.
      */
     public func update<T: ADDataTable>(_ value: T, completionHandler:CloudKitRecordCompletionHandler? = nil) throws {
         
