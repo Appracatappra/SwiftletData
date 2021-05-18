@@ -185,11 +185,17 @@ public class ADSQLEncoder: Encoder {
             // We haven't yet pushed a container at this level; do so here.
             topContainer = self.storage.pushKeyedContainer()
         } else {
-            guard let container = self.storage.containers.last as? ADInstanceDictionary else {
-                preconditionFailure("Attempt to push new keyed encoding container when already previously encoded at this path.")
+            // Changed from throwing the following error:
+            // preconditionFailure("Attempt to push new keyed encoding container when already previously encoded at this path.")
+            // To creating and pushing a new container to solve a "race condition" that was occurring when encoding an array of
+            // sub object in the parent object.
+            if let container = self.storage.containers.last as? ADInstanceDictionary {
+                // The top container was of the correct type, return it as normal.
+                topContainer = container
+            } else {
+                // We've entered the race condition, create a new container and push it onto the stack.
+                topContainer = self.storage.pushKeyedContainer()
             }
-            
-            topContainer = container
         }
         
         let container = ADSQLKeyedEncodingContainer<Key>(referencing: self, codingPath: self.codingPath, wrapping: topContainer)
@@ -208,11 +214,17 @@ public class ADSQLEncoder: Encoder {
             // We haven't yet pushed a container at this level; do so here.
             topContainer = self.storage.pushUnkeyedContainer()
         } else {
-            guard let container = self.storage.containers.last as? ADInstanceArray else {
-                preconditionFailure("Attempt to push new unkeyed encoding container when already previously encoded at this path.")
+            // Changed from throwing the following error:
+            // preconditionFailure("Attempt to push new unkeyed encoding container when already previously encoded at this path.")
+            // To creating and pushing a new container to solve a "race condition" that was occurring when encoding an array of
+            // sub object in the parent object.
+            if let container = self.storage.containers.last as? ADInstanceArray {
+                // The top container was of the correct type, return it as normal.
+                topContainer = container
+            } else {
+                // We've entered the race condition, create a new container and push it onto the stack.
+                topContainer = self.storage.pushUnkeyedContainer()
             }
-            
-            topContainer = container
         }
         
         return ADSQLUnkeyedEncodingContainer(referencing: self, codingPath: self.codingPath, wrapping: topContainer)

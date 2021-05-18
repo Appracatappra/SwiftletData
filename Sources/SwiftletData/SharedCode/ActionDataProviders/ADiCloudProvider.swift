@@ -630,7 +630,7 @@ open class ADiCloudProvider {
                 print("Unable to delete record from \(baseType.tableName) before performing an update: \(error)")
             } else {
                 // Now save a new copy
-                try? self.save(value, completionHandler: completionHandler)
+                try? self.save(value, updateIfExists: false, completionHandler: completionHandler)
             }
         }
     
