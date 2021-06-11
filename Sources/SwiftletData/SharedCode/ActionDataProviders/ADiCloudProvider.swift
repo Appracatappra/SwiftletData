@@ -608,7 +608,7 @@ open class ADiCloudProvider {
                 }
                 
                 // Load any existing `CKRecord` for this key or build a brand new record
-                try fetchOrCreateCKRecord(value, forPrimaryKeyValue: baseType.primaryKey) { record, error in
+                try fetchOrCreateCKRecord(value, forPrimaryKeyValue: key) { record, error in
                     do {
                         // Update record
                         let updateRecord = try self.updateCloudKitRecord(for: record, from: data)
