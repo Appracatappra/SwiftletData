@@ -6,7 +6,7 @@
 
 # Define macros
 PROJECT_NAME="SwiftletData"
-API_OUTPUT="Documentation/API/"
+API_OUTPUT="JazzyDocumentation/API/"
 ROOT_URL="http://appracatappra.com/api/"
 
 # Make sure the output directory exists

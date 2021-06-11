@@ -1,0 +1,1986 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ADiCloudProvider Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ADiCloudProvider" class="dashAnchor"></a>
+    <a title="ADiCloudProvider Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SwiftletData Docs</a> (83% documented)</p>
+        <p class="header-right"><a href="dash-feed://http%3A%2F%2Fappracatappra.com%2Fapi%2Fdocsets%2FSwiftletData.xml"><img src="../img/dash.png"/>Install in Dash</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SwiftletData Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ADiCloudProvider Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ADColumnSchema.html">ADColumnSchema</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADDataStore.html">ADDataStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADInstanceArray.html">ADInstanceArray</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADInstanceDictionary.html">ADInstanceDictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONDecoder.html">ADSPONDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONDecoder/DateDecodingStrategy.html">– DateDecodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONDecoder/DataDecodingStrategy.html">– DataDecodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONEncoder.html">ADSPONEncoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONEncoder/DateEncodingStrategy.html">– DateEncodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONEncoder/DataEncodingStrategy.html">– DataEncodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSPONProvider.html">ADSPONProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLBetweenExpression.html">ADSQLBetweenExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLBinaryExpression.html">ADSQLBinaryExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLBinaryExpression/BinaryOperation.html">– BinaryOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLCaseExpression.html">ADSQLCaseExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLDecoder.html">ADSQLDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLDecoder/DateDecodingStrategy.html">– DateDecodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLDecoder/DataDecodingStrategy.html">– DataDecodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLEncoder.html">ADSQLEncoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLEncoder/DateEncodingStrategy.html">– DateEncodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLEncoder/DataEncodingStrategy.html">– DataEncodingStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLExpressionBuilder.html">ADSQLExpressionBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLForeignKeyExpression.html">ADSQLForeignKeyExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLForeignKeyExpression/OnModify.html">– OnModify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLForeignKeyExpression/ModifyAction.html">– ModifyAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLFunctionExpression.html">ADSQLFunctionExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLInExpression.html">ADSQLInExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLJoinClause.html">ADSQLJoinClause</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLJoinClause/JoinType.html">– JoinType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLLiteralExpression.html">ADSQLLiteralExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLParser.html">ADSQLParser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLUnaryExpression.html">ADSQLUnaryExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLUnaryExpression/UnaryOperation.html">– UnaryOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLWhenExpression.html">ADSQLWhenExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADSQLiteProvider.html">ADSQLiteProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADTableSchema.html">ADTableSchema</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADTableStore.html">ADTableStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADUtilities.html">ADUtilities</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADUtilities/Comparison.html">– Comparison</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADUtilities/Operation.html">– Operation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ADiCloudProvider.html">ADiCloudProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:12SwiftletData11SQLITE_DATEs5Int32Vvp">SQLITE_DATE</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ADDataProviderError.html">ADDataProviderError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADDataTableKeyType.html">ADDataTableKeyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLColumnType.html">ADSQLColumnType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLConflictHandling.html">ADSQLConflictHandling</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLExecutionError.html">ADSQLExecutionError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLFunction.html">ADSQLFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLKeyword.html">ADSQLKeyword</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADSQLParseError.html">ADSQLParseError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ADiCloudDatabaseType.html">ADiCloudDatabaseType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ADDataCrossReference.html">ADDataCrossReference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ADDataProvider.html">ADDataProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ADDataTable.html">ADDataTable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ADSQLExpression.html">ADSQLExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:12SwiftletData16ADSQLInstructionP">ADSQLInstruction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ADCrossReference.html">ADCrossReference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLAlterTableInstruction.html">ADSQLAlterTableInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLColumnConstraint.html">ADSQLColumnConstraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLColumnConstraint/ColumnConstraintType.html">– ColumnConstraintType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLColumnDefinition.html">ADSQLColumnDefinition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateIndexInstruction.html">ADSQLCreateIndexInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateTableInstruction.html">ADSQLCreateTableInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateTriggerInstruction.html">ADSQLCreateTriggerInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateTriggerInstruction/WhenToTrigger.html">– WhenToTrigger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateTriggerInstruction/TriggerType.html">– TriggerType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLCreateViewInstruction.html">ADSQLCreateViewInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLDeleteInstruction.html">ADSQLDeleteInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLDropInstruction.html">ADSQLDropInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLDropInstruction/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLInsertInstruction.html">ADSQLInsertInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLInsertInstruction/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLOrderByClause.html">ADSQLOrderByClause</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLOrderByClause/Order.html">– Order</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLResultColumn.html">ADSQLResultColumn</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLSelectInstruction.html">ADSQLSelectInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLSetClause.html">ADSQLSetClause</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLTableConstraint.html">ADSQLTableConstraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLTableConstraint/TableConstraintType.html">– TableConstraintType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLTransactionInstruction.html">ADSQLTransactionInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLTransactionInstruction/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLUpdateInstruction.html">ADSQLUpdateInstruction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ADSQLUpdateInstruction/Action.html">– Action</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12SwiftletData8ADRecorda">ADRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12SwiftletData11ADRecordSeta">ADRecordSet</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ADiCloudProvider</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">ADiCloudProvider</span></code></pre>
+
+                </div>
+              </div>
+            <p>The <code>ADiCloudProvider</code> provides both light-weight, low-level access to data stored in a iCloud Database Container (public or private) and high-level access via a <strong>Object Relationship Management</strong> (ORM) model. Use provided functions to read and write data stored in a <code><a href="../Typealiases.html#/s:12SwiftletData8ADRecorda">ADRecord</a></code> format from and to the database using SQL like statements directly.</p>
+
+<p>Optionally, pass a class instance conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol to the <code>ADiCloudProvider</code> and it will automatically handle reading, writing and deleting data as required.</p>
+<h3 id='example' class='heading'>Example:</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">addr1</span> <span class="o">=</span> <span class="kt">Address</span><span class="p">(</span><span class="nv">addr1</span><span class="p">:</span> <span class="s">"PO Box 1234"</span><span class="p">,</span> <span class="nv">addr2</span><span class="p">:</span> <span class="s">""</span><span class="p">,</span> <span class="nv">city</span><span class="p">:</span> <span class="s">"Houston"</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="s">"TX"</span><span class="p">,</span> <span class="nv">zip</span><span class="p">:</span> <span class="s">"77012"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">addr2</span> <span class="o">=</span> <span class="kt">Address</span><span class="p">(</span><span class="nv">addr1</span><span class="p">:</span> <span class="s">"25 Nasa Rd 1"</span><span class="p">,</span> <span class="nv">addr2</span><span class="p">:</span> <span class="s">"Apt #123"</span><span class="p">,</span> <span class="nv">city</span><span class="p">:</span> <span class="s">"Seabrook"</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="s">"TX"</span><span class="p">,</span> <span class="nv">zip</span><span class="p">:</span> <span class="s">"77586"</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">p1</span> <span class="o">=</span> <span class="kt">Person</span><span class="p">(</span><span class="nv">firstName</span><span class="p">:</span> <span class="s">"John"</span><span class="p">,</span> <span class="nv">lastName</span><span class="p">:</span> <span class="s">"Doe"</span><span class="p">,</span> <span class="nv">addresses</span><span class="p">:</span> <span class="p">[</span><span class="s">"home"</span><span class="p">:</span><span class="n">addr1</span><span class="p">,</span> <span class="s">"work"</span><span class="p">:</span><span class="n">addr2</span><span class="p">])</span>
+<span class="k">let</span> <span class="nv">p2</span> <span class="o">=</span> <span class="kt">Person</span><span class="p">(</span><span class="nv">firstName</span><span class="p">:</span> <span class="s">"Sue"</span><span class="p">,</span> <span class="nv">lastName</span><span class="p">:</span> <span class="s">"Smith"</span><span class="p">,</span> <span class="nv">addresses</span><span class="p">:</span> <span class="p">[</span><span class="s">"home"</span><span class="p">:</span><span class="n">addr1</span><span class="p">,</span> <span class="s">"work"</span><span class="p">:</span><span class="n">addr2</span><span class="p">])</span>
+
+<span class="k">let</span> <span class="nv">group</span> <span class="o">=</span> <span class="kt">Group</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Employees"</span><span class="p">,</span> <span class="nv">people</span><span class="p">:</span> <span class="p">[</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">])</span>
+<span class="k">try</span> <span class="kt">ADiCloudProvider</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">save</span><span class="p">(</span><span class="n">group</span><span class="p">)</span>
+</code></pre>
+
+<p>The following would read the data back for any modified records after a given date/time from iCloud:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">timeOfLastCacheUpdate</span> <span class="o">=</span> <span class="kt">Date</span><span class="p">()</span>
+<span class="k">try</span> <span class="kt">ADiCloudProvider</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">loadRows</span><span class="p">(</span><span class="nv">ofType</span><span class="p">:</span> <span class="kt">Group</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">matchingQuery</span><span class="p">:</span> <span class="s">"modificationDate &gt;= %@"</span><span class="p">,</span> <span class="nv">sortBy</span><span class="p">:</span> <span class="s">"modificationDate"</span><span class="p">,</span> <span class="nv">withParameters</span><span class="p">:</span> <span class="p">[</span><span class="n">timeOfLastCacheUpdate</span><span class="p">])</span> <span class="p">{</span> <span class="n">records</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
+    <span class="c1">// Ensure the records were loaded</span>
+    <span class="k">guard</span> <span class="n">error</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Error loading the Groups: </span><span class="se">\(</span><span class="kt">String</span><span class="p">(</span><span class="nv">describing</span><span class="p">:</span> <span class="n">error</span><span class="p">)</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+        <span class="k">return</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Was a record returned?</span>
+    <span class="k">if</span> <span class="k">let</span> <span class="nv">records</span> <span class="o">=</span> <span class="n">records</span> <span class="p">{</span>
+        <span class="kt">DispatchQueue</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="n">async</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="n">record</span> <span class="k">in</span> <span class="n">records</span> <span class="p">{</span>
+                <span class="o">...</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    The <code>ADiCloudProvider</code> will automatically create any required iCloud Table Schemas from a class instance if one does not already exist. In addition, <code>ADiCloudProvider</code> contains routines to preregister or update the schema classes conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol which will build or modify the database schemas as required.
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Type%20Aliases"></a>
+                <a name="//apple_ref/swift/Section/Type Aliases" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Type%20Aliases"></a>
+                  <h3 class="section-name"><p>Type Aliases</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC0D26KitRecordCompletionHandlera"></a>
+                    <a name="//apple_ref/swift/Alias/CloudKitRecordCompletionHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC0D26KitRecordCompletionHandlera">CloudKitRecordCompletionHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Defines a type alias returned from a call to a CloudKit database function.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">CloudKitRecordCompletionHandler</span> <span class="o">=</span> <span class="p">(</span><span class="kt">CKRecord</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC0D28KitRecordIDCompletionHandlera"></a>
+                    <a name="//apple_ref/swift/Alias/CloudKitRecordIDCompletionHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC0D28KitRecordIDCompletionHandlera">CloudKitRecordIDCompletionHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Defines a type alias returned from a call to a CloudKit database function.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">CloudKitRecordIDCompletionHandler</span> <span class="o">=</span> <span class="p">(</span><span class="kt">CKRecord</span><span class="o">.</span><span class="kt">ID</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC0D29KitRecordSetCompletionHandlera"></a>
+                    <a name="//apple_ref/swift/Alias/CloudKitRecordSetCompletionHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC0D29KitRecordSetCompletionHandlera">CloudKitRecordSetCompletionHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Defines a type alias returned from a call to a CloudKit database function.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">CloudKitRecordSetCompletionHandler</span> <span class="o">=</span> <span class="p">([</span><span class="kt">CKRecord</span><span class="p">]?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Static%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Static Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Static%20Properties"></a>
+                  <h3 class="section-name"><p>Static Properties</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC02isD12KitAvailableSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isCloudKitAvailable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC02isD12KitAvailableSbvp">isCloudKitAvailable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If <code>true</code> CloudKit is available, else it isn&rsquo;t.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isCloudKitAvailable</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Static%20Functions"></a>
+                <a name="//apple_ref/swift/Section/Static Functions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Static%20Functions"></a>
+                  <h3 class="section-name"><p>Static Functions</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC04ShowD14KitAccessAlert7appName3for11showMessageySS_SSySS_SStctFZ"></a>
+                    <a name="//apple_ref/swift/Method/ShowCloudKitAccessAlert(appName:for:showMessage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC04ShowD14KitAccessAlert7appName3for11showMessageySS_SSySS_SStctFZ">ShowCloudKitAccessAlert(appName:<wbr>for:<wbr>showMessage:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Displays an error alert to the user when error occurrs trying to read, write or delete from CloudKit.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="kt">ShowCloudKitAccessAlert</span><span class="p">(</span><span class="nv">appName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="k">for</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">showMessage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">String</span><span class="p">,</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>appName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the app to display the alert in.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The action that was trying to be performed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>showMessage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to handle showing the alert to the user.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC04showD13KitErrorAlert7appName3for4with0F7MessageySS_SSs0H0_pySS_SStctFZ"></a>
+                    <a name="//apple_ref/swift/Method/showCloudKitErrorAlert(appName:for:with:showMessage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC04showD13KitErrorAlert7appName3for4with0F7MessageySS_SSs0H0_pySS_SStctFZ">showCloudKitErrorAlert(appName:<wbr>for:<wbr>with:<wbr>showMessage:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Displayes an error alert to the user when error occurrs trying to read, write or delete from CloudKit.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">showCloudKitErrorAlert</span><span class="p">(</span><span class="nv">appName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="k">for</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">with</span> <span class="nv">dbError</span><span class="p">:</span> <span class="kt">Error</span><span class="p">,</span> <span class="nv">showMessage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">String</span><span class="p">,</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>appName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the app to display the alert in.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The action that was trying to be performed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dbError</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Error that was initially thrown.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>showMessage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to handle showing the alert to the user.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Static%20Properties2"></a>
+                <a name="//apple_ref/swift/Section/Static Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Static%20Properties2"></a>
+                  <h3 class="section-name"><p>Static Properties</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC6sharedACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC6sharedACvpZ">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides access to a common, shared instance of the <code>ADiCloudProvider</code>. For app&rsquo;s that are working with a single private iCloud database, they can use this instance instead of creating their own instance of a <code>ADiCloudProvider</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">ADiCloudProvider</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC12sharedPublicACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/sharedPublic" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC12sharedPublicACvpZ">sharedPublic</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides access to a common, shared instance of the <code>ADiCloudProvider</code>. For app&rsquo;s that are working with a single public iCloud database, they can use this instance instead of creating their own instance of a <code>ADiCloudProvider</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">sharedPublic</span><span class="p">:</span> <span class="kt">ADiCloudProvider</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC24autoIncrementingKeyValueSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/autoIncrementingKeyValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC24autoIncrementingKeyValueSivpZ">autoIncrementingKeyValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The current value of an auto incrementing integer key used for CloudKit records.</p>
+
+<p>HACK: This is currently just a quick fix hack and needs to be written to correctly get the required value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">autoIncrementingKeyValue</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An integer value for the next available auto incrementing key.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC02isD12KitAvailableSbvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/isCloudKitAvailable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC02isD12KitAvailableSbvpZ">isCloudKitAvailable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <code>true</code> if CloudKit is available on the given device, else returns <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">isCloudKitAvailable</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20properties"></a>
+                <a name="//apple_ref/swift/Section/Private properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Private%20properties"></a>
+                  <h3 class="section-name"><p>Private properties</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC10isReadOnlySbvp"></a>
+                    <a name="//apple_ref/swift/Property/isReadOnly" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC10isReadOnlySbvp">isReadOnly</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <code>true</code> if the data provider can write to the currently open iCloud database, else returns <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">isReadOnly</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC21cloudKitAccountStatusSo09CKAccountI0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/cloudKitAccountStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC21cloudKitAccountStatusSo09CKAccountI0Vvp">cloudKitAccountStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Holds the current user&rsquo;s CloudKit account status.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">cloudKitAccountStatus</span><span class="p">:</span> <span class="kt">CKAccountStatus</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Computed%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Computed Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Computed%20Properties"></a>
+                  <h3 class="section-name"><p>Computed Properties</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC6isOpenSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isOpen" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC6isOpenSbvp">isOpen</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <code>true</code> if a iCloud database currently open in the data provider, else returns <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isOpen</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC11hasMoreRowsSbvp"></a>
+                    <a name="//apple_ref/swift/Property/hasMoreRows" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC11hasMoreRowsSbvp">hasMoreRows</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Are there more rows waiting after performing a fetch of records that resulted in a large number of records being returned?</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hasMoreRows</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initializers"></a>
+                  <h3 class="section-name"><p>Initializers</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderCACycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderCACycfc">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Functions"></a>
+                <a name="//apple_ref/swift/Section/Functions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Functions"></a>
+                  <h3 class="section-name"><p>Functions</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC10openSource19containerIdentifier4typeySSSg_AA0cD12DatabaseTypeOtKF"></a>
+                    <a name="//apple_ref/swift/Method/openSource(containerIdentifier:type:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC10openSource19containerIdentifier4typeySSSg_AA0cD12DatabaseTypeOtKF">openSource(containerIdentifier:<wbr>type:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Opens a CloudKit container and database with the given parameters.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">openSource</span><span class="p">(</span><span class="nv">containerIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/ADiCloudDatabaseType.html">ADiCloudDatabaseType</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">privateDatabase</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>containerIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the container to open or <code>nil</code> to open the app&rsquo;s default container.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of database to open from the container: private, public or shared.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC11closeSourceyyF"></a>
+                    <a name="//apple_ref/swift/Method/closeSource()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC11closeSourceyyF">closeSource()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Closes any open iCloud container and database.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">closeSource</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC9lastIntID8forTable7withKeySiSS_SStKF"></a>
+                    <a name="//apple_ref/swift/Method/lastIntID(forTable:withKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC9lastIntID8forTable7withKeySiSS_SStKF">lastIntID(forTable:<wbr>withKey:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the largest used number for the given integer primary key of the given table.</p>
+<h2 id='example' class='heading'>Example:</h2>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">lastID</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">ADiCloudProvider</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">lastIntID</span><span class="p">(</span><span class="nv">forTable</span><span class="p">:</span> <span class="s">"Person"</span><span class="p">,</span> <span class="nv">withKey</span><span class="p">:</span> <span class="s">"ID"</span><span class="p">)</span>
+</code></pre>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    <p>This function works with integer primary keys that are not marked AUTOINCREMENT and is useful when the data being stored in a database needs to know the next available ID before a record has been saved.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lastIntID</span><span class="p">(</span><span class="n">forTable</span> <span class="nv">table</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withKey</span> <span class="nv">primaryKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>table</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the table to get the last ID from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>primaryKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the primary key.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The largest used number for the given primary key or zero if no record has been written to the table yet.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/ORM%20Functions"></a>
+                <a name="//apple_ref/swift/Section/ORM Functions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/ORM%20Functions"></a>
+                  <h3 class="section-name"><p>ORM Functions</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC4makeyxxmKAA11ADDataTableRzlF"></a>
+                    <a name="//apple_ref/swift/Method/make(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC4makeyxxmKAA11ADDataTableRzlF">make(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an instance of the given <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> class automatically setting the <strong>primaryKey</strong> field based on the value of the <strong>primaryKeyType</strong>.</p>
+<h2 id='example' class='heading'>Example:</h2>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">category</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">ADiCloudProvider</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">make</span><span class="p">(</span><span class="kt">Category</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">make</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The class conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol to create an instance of.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new instance of the given class with the <strong>primaryKey</strong> automatically set.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC6makeIDyypSgxmAA11ADDataTableRzlF"></a>
+                    <a name="//apple_ref/swift/Method/makeID(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC6makeIDyypSgxmAA11ADDataTableRzlF">makeID(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a value for the <strong>primaryKey</strong> field based on the value of the <strong>primaryKeyType</strong> for a class conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol.</p>
+<h2 id='example' class='heading'>Example:</h2>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">id</span> <span class="o">=</span> <span class="kt">ADiCloudProvider</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">makeID</span><span class="p">(</span><span class="kt">Category</span><span class="o">.</span><span class="k">self</span><span class="p">)</span> <span class="k">as!</span> <span class="kt">Int</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">makeID</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="p">?</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The class conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol to create primary key for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new primary key value if it can be generated, else returns <code>nil</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC11isUndefined3keySbyp_tF"></a>
+                    <a name="//apple_ref/swift/Method/isUndefined(key:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC11isUndefined3keySbyp_tF">isUndefined(key:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tests to see if the given key holds a valid value to be a key in a CloudKit database.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isUndefined</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key value to test.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the value is not valid for a key value, else returns <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC19registerTableSchema_17withDefaultValuesyxm_xtKAA06ADDataG0RzlF"></a>
+                    <a name="//apple_ref/swift/Method/registerTableSchema(_:withDefaultValues:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC19registerTableSchema_17withDefaultValuesyxm_xtKAA06ADDataG0RzlF">registerTableSchema(_:<wbr>withDefaultValues:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers the given <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> class schema with the data provider and creates a table for the class if it doesn&rsquo;t already exist.</p>
+<h2 id='example' class='heading'>Example:</h2>
+<pre class="highlight swift"><code><span class="k">try</span> <span class="kt">ADiCloudProvider</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">registerTableSchema</span><span class="p">(</span><span class="kt">Category</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+</code></pre>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    Classes are usually registered when an app first starts, directly after a database is opened.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">registerTableSchema</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">withDefaultValues</span> <span class="nv">instance</span><span class="p">:</span> <span class="kt">T</span> <span class="o">=</span> <span class="kt">T</span><span class="o">.</span><span class="nf">init</span><span class="p">())</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of the class to register.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>instance</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An instance of the type with all properties set to the default values that you want to have added to the data source.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC4save_17completionHandleryx_ySo8CKRecordCSg_s5Error_pSgtcSgtKAA11ADDataTableRzlF"></a>
+                    <a name="//apple_ref/swift/Method/save(_:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC4save_17completionHandleryx_ySo8CKRecordCSg_s5Error_pSgtcSgtKAA11ADDataTableRzlF">save(_:<wbr>completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Saves the given class conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol to the database. If the iCloud database does not contain a table named in the <strong>tableName</strong> property, one will be created first. If a record is not on file matching the <strong>primaryKey</strong> value a new record will be created, else an error will be thrown.</p>
+<h2 id='example' class='heading'>Example:</h2>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">category</span> <span class="o">=</span> <span class="kt">Category</span><span class="p">()</span>
+<span class="k">try</span> <span class="kt">ADiCloudProvider</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">save</span><span class="p">(</span><span class="n">category</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">save</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kt"><a href="../Classes/ADiCloudProvider.html#/s:12SwiftletData16ADiCloudProviderC0D26KitRecordCompletionHandlera">CloudKitRecordCompletionHandler</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The class instance to save to the database.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An optional handler to call after the save completes.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC6update_17completionHandleryx_ySo8CKRecordCSg_s5Error_pSgtcSgtKAA11ADDataTableRzlF"></a>
+                    <a name="//apple_ref/swift/Method/update(_:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC6update_17completionHandleryx_ySo8CKRecordCSg_s5Error_pSgtcSgtKAA11ADDataTableRzlF">update(_:<wbr>completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the given class conforming to the <code><a href="../Protocols/ADDataTable.html">ADDataTable</a></code> protocol to the database. If the iCloud database does not contain a table named in the <strong>tableName</strong> property, one will be created first. If a record is not on file matching the <strong>primaryKey</strong> value an error will be thrown, else the existing record will be updated.</p>
+<h2 id='example' class='heading'>Example:</h2>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">category</span> <span class="o">=</span> <span class="kt">Category</span><span class="p">()</span>
+<span class="k">try</span> <span class="kt">ADSPONProvider</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">update</span><span class="p">(</span><span class="n">category</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">update</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kt"><a href="../Classes/ADiCloudProvider.html#/s:12SwiftletData16ADiCloudProviderC0D26KitRecordCompletionHandlera">CloudKitRecordCompletionHandler</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The class instance to update in the database.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An optional handler to call after the save completes.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC6delete_17completionHandleryx_ySo10CKRecordIDCSg_s5Error_pSgtcSgtKAA11ADDataTableRzlF"></a>
+                    <a name="//apple_ref/swift/Method/delete(_:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC6delete_17completionHandleryx_ySo10CKRecordIDCSg_s5Error_pSgtcSgtKAA11ADDataTableRzlF">delete(_:<wbr>completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the given record from the database.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">delete</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kt"><a href="../Classes/ADiCloudProvider.html#/s:12SwiftletData16ADiCloudProviderC0D28KitRecordIDCompletionHandlera">CloudKitRecordIDCompletionHandler</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The object to remove from the database.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler that gets called at the end of the deletion process.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC6delete_18forPrimaryKeyValue17completionHandleryxm_ypySo10CKRecordIDCSg_s5Error_pSgtcSgtKAA11ADDataTableRzlF"></a>
+                    <a name="//apple_ref/swift/Method/delete(_:forPrimaryKeyValue:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC6delete_18forPrimaryKeyValue17completionHandleryxm_ypySo10CKRecordIDCSg_s5Error_pSgtcSgtKAA11ADDataTableRzlF">delete(_:<wbr>forPrimaryKeyValue:<wbr>completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Deletes any record matching the given id from the database.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">delete</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">forPrimaryKeyValue</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Any</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kt"><a href="../Classes/ADiCloudProvider.html#/s:12SwiftletData16ADiCloudProviderC0D28KitRecordIDCompletionHandlera">CloudKitRecordIDCompletionHandler</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of record to delete.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the object to remove from the database.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler that gets called at the end of the deletion process.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC7loadRow6ofType18forPrimaryKeyValue17completionHandleryxm_ypyxSg_s5Error_pSgtctKAA11ADDataTableRzlF"></a>
+                    <a name="//apple_ref/swift/Method/loadRow(ofType:forPrimaryKeyValue:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC7loadRow6ofType18forPrimaryKeyValue17completionHandleryxm_ypyxSg_s5Error_pSgtctKAA11ADDataTableRzlF">loadRow(ofType:<wbr>forPrimaryKeyValue:<wbr>completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads an object of the given type with the given primary key value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">loadRow</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ofType</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">forPrimaryKeyValue</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Any</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">T</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of object to return.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The primary ID of the object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler that gets called during the object load.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC8loadRows6ofType13matchingQuery6sortBy0L9Assending14withParameters17completionHandleryxm_S2SSbSayypGSgySayxGSg_s5Error_pSgtctKAA11ADDataTableRzlF"></a>
+                    <a name="//apple_ref/swift/Method/loadRows(ofType:matchingQuery:sortBy:sortAssending:withParameters:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC8loadRows6ofType13matchingQuery6sortBy0L9Assending14withParameters17completionHandleryxm_S2SSbSayypGSgySayxGSg_s5Error_pSgtctKAA11ADDataTableRzlF">loadRows(ofType:<wbr>matchingQuery:<wbr>sortBy:<wbr>sortAssending:<wbr>withParameters:<wbr>completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads any objects of the given type matching the given query. Use <code>loadRows</code> over <code>getRows</code> when you know a query will return a small number of records or if you don&rsquo;t want to limit the number of rows returned.</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    Use <code>%@</code> for value objects such as strings, numbers, and dates. Use <code>%K</code> for the name of a field. This substitution variable indicates that the substituted string should be used to look up a field name. See: <a href="https://developer.apple.com/documentation/cloudkit/ckquery">https://developer.apple.com/documentation/cloudkit/ckquery</a>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">loadRows</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ofType</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">matchingQuery</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">sortBy</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span> <span class="nv">sortAssending</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">withParameters</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt">T</span><span class="p">]?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of object to return.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>query</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The query used to find the records. Send in &ldquo;*&rdquo; to return all rows.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sortBy</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The field to sort the returned set on. If &ldquo;&rdquo; the rows will be unsorted.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sortAssending</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The direction to sort by.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A list of parameters used in the query string.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler that gets called during the object load.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC7getRows6ofType13matchingQuery14withParameters5limit17completionHandleryxm_SSSayypGSgSiySayxGSg_s5Error_pSgtctKAA11ADDataTableRzlF"></a>
+                    <a name="//apple_ref/swift/Method/getRows(ofType:matchingQuery:withParameters:limit:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC7getRows6ofType13matchingQuery14withParameters5limit17completionHandleryxm_SSSayypGSgSiySayxGSg_s5Error_pSgtctKAA11ADDataTableRzlF">getRows(ofType:<wbr>matchingQuery:<wbr>withParameters:<wbr>limit:<wbr>completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads any objects of the given type matching the given query up to the given limit. Use <code>getRows</code> over <code>loadRows</code> when the resulting dataset returned could be larger than the maximum number of records that CloudKit will return in a single query or if you wish to limit the number of rows returned. See: <a href="https://www.hackingwithswift.com/read/33/6/reading-from-icloud-with-cloudkit-ckqueryoperation-and-nspredicate">https://www.hackingwithswift.com/read/33/6/reading-from-icloud-with-cloudkit-ckqueryoperation-and-nspredicate</a></p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    Use <code>%@</code> for value objects such as strings, numbers, and dates. Use <code>%K</code> for the name of a field. This substitution variable indicates that the substituted string should be used to look up a field name.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">getRows</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ofType</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">matchingQuery</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withParameters</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kt">CKQueryOperation</span><span class="o">.</span><span class="n">maximumResults</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt">T</span><span class="p">]?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of object to return.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>query</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The query used to find the records. Send in &ldquo;*&rdquo; to return all rows.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A list of parameters used in the query string.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>limit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The maximum number of rows to return. The default is the maximum number of rows that CloudKit will return.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler that gets called during the object load.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SwiftletData16ADiCloudProviderC16getRemainingRows6ofType17completionHandleryxm_ySayxGSg_s5Error_pSgtctKAA11ADDataTableRzlF"></a>
+                    <a name="//apple_ref/swift/Method/getRemainingRows(ofType:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SwiftletData16ADiCloudProviderC16getRemainingRows6ofType17completionHandleryxm_ySayxGSg_s5Error_pSgtctKAA11ADDataTableRzlF">getRemainingRows(ofType:<wbr>completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>After performing a <code>getRows</code> call, if the <code><a href="../Classes/ADiCloudProvider.html#/s:12SwiftletData16ADiCloudProviderC11hasMoreRowsSbvp">hasMoreRows</a></code> property is <code>true</code> use this function to return the remaining rows.</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    <p>If the <code><a href="../Classes/ADiCloudProvider.html#/s:12SwiftletData16ADiCloudProviderC11hasMoreRowsSbvp">hasMoreRows</a></code> property is still <code>true</code> after calling this function, there were still more rows than could be returned in a single call. You can continue to call <code>getRemainingRows</code> until <code><a href="../Classes/ADiCloudProvider.html#/s:12SwiftletData16ADiCloudProviderC11hasMoreRowsSbvp">hasMoreRows</a></code> is <code>false</code> to retrieve all records.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">getRemainingRows</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ofType</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt">T</span><span class="p">]?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ADDataTable.html">ADDataTable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of object to return.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler that gets called during the object load.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external">Appracatappra, LLC</a>. All rights reserved. (Last updated: 2021-06-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

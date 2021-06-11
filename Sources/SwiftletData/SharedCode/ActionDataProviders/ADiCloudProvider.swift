@@ -364,6 +364,40 @@ open class ADiCloudProvider {
         return record
     }
     
+    
+    /// Updates an existing `CKRecord` pulled from CloudKit with the values from the in memory `ADDataTable` instance of the record.
+    ///
+    /// This function is used to update an existing record instead of having to delete the record and resave it as a brand new record.
+    ///
+    /// - Parameters:
+    ///   - record: The `CKRecord` read from CloudKit to update.
+    ///   - data: The `ADData` from the in-memory `ADDataTable` to update the record with.
+    /// - Returns: The modified `CKRecord` with the new values.
+    private func updateCloudKitRecord(for record:CKRecord, from data:ADRecord) throws -> CKRecord {
+        
+        // Write new values into existing CloudKit record.
+        for (key,info) in data {
+            // Copy the data over to the CloudKit record
+            if let text = info as? String {
+                record[key] = NSString(string: text)
+            } else if let number = info as? Float {
+                record[key] = NSNumber(value: number)
+            } else if let number = info as? Double {
+                record[key] = NSNumber(value: number)
+            } else if let number = info as? Int {
+                record[key] = NSNumber(value: number)
+            } else if let value = info as? Bool {
+                let text = value ? "$#1" : "$#0"
+                record[key] = NSString(string: text)
+            } else {
+                throw ADDataProviderError.failedToPrepareSQL(message: "Could not convert field `\(key)` to a valid CloudKit value.")
+            }
+        }
+        
+        // Return new record
+        return record
+    }
+    
     /**
      Attempts to convert the given CloudKit record to a `ADRecord`.
      
@@ -550,10 +584,9 @@ open class ADiCloudProvider {
      ```
      
      - Parameter value: The class instance to save to the database.
-     - Parameter updateIfExists: If `true` and the save fails, attempt to do an `update` on the record instead.
      - Parameter completionHandler: An optional handler to call after the save completes.
      */
-    public func save<T: ADDataTable>(_ value: T, updateIfExists:Bool = true, completionHandler:CloudKitRecordCompletionHandler? = nil) throws {
+    public func save<T: ADDataTable>(_ value: T, completionHandler:CloudKitRecordCompletionHandler? = nil) throws {
         let baseType = type(of: value)
         
         // Ensure the database is open
@@ -574,30 +607,25 @@ open class ADiCloudProvider {
                     }
                 }
                 
-                // Assemble the required record
-                let cloudkitKey = uniqueKey(baseType, forPrimaryKeyValue: key)
-                let record = try buildCloudKitRecord(for: baseType.tableName, from: data, with: cloudkitKey)
-                
-                // Attempt to save record to database.
-                iCloudDatabase?.save(record) { record, error in
-                    if let handler = completionHandler {
-                        // Pass info to caller.
-                        handler(record, error)
-                    } else if let err = error {
-                        if updateIfExists {
-                            // Assume the failure happened because the record was already in the database and use the update function instead
-                            do {
-                                try self.update(value, completionHandler: completionHandler)
-                            } catch {
-                                // Report error
-                                print("Unable to save `\(cloudkitKey)` to \(baseType.tableName): \(err)")
-                            }
+                // Load any existing `CKRecord` for this key or build a brand new record
+                try fetchOrCreateCKRecord(value, forPrimaryKeyValue: baseType.primaryKey) { record, error in
+                    do {
+                        // Update record
+                        let updateRecord = try self.updateCloudKitRecord(for: record, from: data)
+                        
+                        // Save updated record to iCloud
+                        try self.save(updateRecord, tableName: baseType.tableName, completionHandler: completionHandler)
+                    } catch {
+                        if let handler = completionHandler {
+                            // Pass info to caller.
+                            handler(record, error)
                         } else {
                             // Report error
-                            print("Unable to save `\(cloudkitKey)` to \(baseType.tableName): \(err)")
+                            print("Unable to save record to \(baseType.tableName): \(error)")
                         }
                     }
                 }
+                
             } else {
                 throw ADDataProviderError.failedToPrepareSQL(message: "Unable locate required value for key \(baseType.primaryKey).")
             }
@@ -605,6 +633,76 @@ open class ADiCloudProvider {
             throw ADDataProviderError.failedToPrepareSQL(message: "Unable to convert class to a ADRecord.")
         }
         
+    }
+    
+    
+    /// Writes the given `CKRecord` to iCloud and reports success or failure to the optional completion handler.
+    /// - Parameters:
+    ///   - record: The `CKRecord` to save to iCloud.
+    ///   - tableName: The name of the table the record is being saved to.
+    ///   - completionHandler: An optional handler to call after the save completes.
+    private func save(_ record:CKRecord, tableName:String, completionHandler: CloudKitRecordCompletionHandler? = nil) throws {
+        
+        // Attempt to save record to database.
+        iCloudDatabase?.save(record) { record, error in
+            if let handler = completionHandler {
+                // Pass info to caller.
+                handler(record, error)
+            } else if let err = error {
+                // Report error
+                print("Unable to save record to \(tableName): \(err)")
+            }
+        }
+    }
+    
+    /**
+     Either loads an existing `CKRecord` from iCloud or creates a new `CKRecord` if the record isn't found or cannot be loaded.
+     
+     ## Example:
+     ```swift
+     var category = Category()
+     try ADiCloudProvider.shared.fetchOrCreateCKRecord(category, forPrimaryKeyValue: category.id) { record, error in
+        ...
+     }
+     ```
+     
+     - Parameter value: The class instance to save to the database.
+     - Parameter forPrimaryKeyValue: The primary key for the record.
+     - Parameter completionHandler: Handles the `CKRecord` being loaded or created.
+     */
+    private func fetchOrCreateCKRecord<T: ADDataTable>(_ value: T, forPrimaryKeyValue key: Any, completionHandler:@escaping (CKRecord, Error?) -> Void) throws {
+        let baseType = type(of: value)
+        
+        // Ensure the database is open
+        guard isOpen else {
+            throw ADDataProviderError.dataSourceNotOpen
+        }
+        
+        // Assemble key
+        let recordKey = CKRecord.ID(recordName: uniqueKey(baseType, forPrimaryKeyValue: key))
+        
+        // Attempt to read from database
+        iCloudDatabase?.fetch(withRecordID: recordKey) { record, error in
+            // Process returned data
+            if let err = error {
+                // Build new CloudKit record
+                let recordKey = CKRecord.ID(recordName: "\(key)")
+                let newRecord = CKRecord(recordType: baseType.tableName, recordID: recordKey)
+                
+                // Return found record
+                completionHandler(newRecord, err)
+            } else if let record = record {
+                // Return found record
+                completionHandler(record, nil)
+            } else {
+                // Build new CloudKit record
+                let recordKey = CKRecord.ID(recordName: "\(key)")
+                let newRecord = CKRecord(recordType: baseType.tableName, recordID: recordKey)
+                
+                // Return found record
+                completionHandler(newRecord, ADSQLExecutionError.noRowsReturned(message: "Record not found for key \(key)."))
+            }
+        }
     }
     
     /**
@@ -622,18 +720,20 @@ open class ADiCloudProvider {
     public func update<T: ADDataTable>(_ value: T, completionHandler:CloudKitRecordCompletionHandler? = nil) throws {
         
         // Nuke record first
-        try delete(value) { id, error in
-            if let error = error {
-                let baseType = type(of: value)
-                
-                // Report error
-                print("Unable to delete record from \(baseType.tableName) before performing an update: \(error)")
-            } else {
-                // Now save a new copy
-                try? self.save(value, updateIfExists: false, completionHandler: completionHandler)
-            }
-        }
-    
+//        try delete(value) { id, error in
+//            if let error = error {
+//                let baseType = type(of: value)
+//
+//                // Report error
+//                print("Unable to delete record from \(baseType.tableName) before performing an update: \(error)")
+//            } else {
+//                // Now save a new copy
+//                try? self.save(value, updateIfExists: false, completionHandler: completionHandler)
+//            }
+//        }
+        
+        // Just call save now since I've updated it to handle updates automatically
+        try save(value, completionHandler: completionHandler)
     }
     
     /**
