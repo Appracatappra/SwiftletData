@@ -686,7 +686,6 @@ open class ADiCloudProvider {
             // Process returned data
             if let err = error {
                 // Build new CloudKit record
-                let recordKey = CKRecord.ID(recordName: "\(key)")
                 let newRecord = CKRecord(recordType: baseType.tableName, recordID: recordKey)
                 
                 // Return found record
@@ -696,7 +695,6 @@ open class ADiCloudProvider {
                 completionHandler(record, nil)
             } else {
                 // Build new CloudKit record
-                let recordKey = CKRecord.ID(recordName: "\(key)")
                 let newRecord = CKRecord(recordType: baseType.tableName, recordID: recordKey)
                 
                 // Return found record
@@ -717,20 +715,8 @@ open class ADiCloudProvider {
      - Parameter value: The class instance to update in the database.
      - Parameter completionHandler: An optional handler to call after the save completes.
      */
+    @available(*, deprecated, message: "Call `save` directly as it handles updates correctly now.")
     public func update<T: ADDataTable>(_ value: T, completionHandler:CloudKitRecordCompletionHandler? = nil) throws {
-        
-        // Nuke record first
-//        try delete(value) { id, error in
-//            if let error = error {
-//                let baseType = type(of: value)
-//
-//                // Report error
-//                print("Unable to delete record from \(baseType.tableName) before performing an update: \(error)")
-//            } else {
-//                // Now save a new copy
-//                try? self.save(value, updateIfExists: false, completionHandler: completionHandler)
-//            }
-//        }
         
         // Just call save now since I've updated it to handle updates automatically
         try save(value, completionHandler: completionHandler)
