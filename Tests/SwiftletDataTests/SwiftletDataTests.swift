@@ -7,6 +7,7 @@
 
 import XCTest
 import SwiftUI
+import LogManager
 @testable import SwiftletData
 
 final class SwiftUtilitiesTests: XCTestCase {
@@ -46,7 +47,7 @@ final class SwiftUtilitiesTests: XCTestCase {
             XCTAssert(category.name == rebuilt.name)
         } catch {
             XCTFail()
-            print("SPON failed: \(error)")
+            Debug.error(subsystem: "SwiftletDataTests", category: "testSPON", "SPON failed: \(error)")
         }
     }
     

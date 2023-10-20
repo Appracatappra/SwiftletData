@@ -11,6 +11,7 @@
 import Foundation
 import SQLite3
 import SwiftletUtilities
+import LogManager
 
 /// Defines the type for a SQLite Date value.
 public let SQLITE_DATE = SQLITE_NULL + 1
@@ -236,7 +237,7 @@ open class ADSQLiteProvider: ADDataProvider {
         if error != SQLITE_OK {
             // Open failed, close DB and fail
             sqlite3_close(db)
-            print("SQLite database error: \(error)")
+            Log.error(subsystem: "ADSQLiteProvider", category: "openSource", "SQLite database error: \(error)")
             throw ADDataProviderError.unableToOpenDataSource
         }
         

@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import SwiftletUtilities
 import CloudKit
+import LogManager
 
 /**
  The `ADiCloudProvider` provides both light-weight, low-level access to data stored in a iCloud Database Container (public or private) and high-level access via a **Object Relationship Management** (ORM) model. Use provided functions to read and write data stored in a `ADRecord` format from and to the database using SQL like statements directly.
@@ -99,6 +100,8 @@ open class ADiCloudProvider {
             return false
         case .restricted:
             return false
+        case .temporarilyUnavailable:
+            return false
         @unknown default:
             return false
         }
@@ -123,7 +126,7 @@ open class ADiCloudProvider {
             if let error = error {
                 // Unable to check status
                 cloudKitAccountStatus = .couldNotDetermine
-                print("Unable to determine the user's CloudKit account status: \(error)")
+                Log.error(subsystem: "ADiCloudprovider", category: "CloudKit", "Unable to determine the user's CloudKit account status: \(error)")
             } else {
                 // Save status
                 cloudKitAccountStatus = accountStatus
@@ -136,6 +139,8 @@ open class ADiCloudProvider {
                 description = "You must be logged into an iCloud account in Settings before \(appName) can save, load or delete items."
             case .restricted:
                 description = "Your iCloud account doesn't have the required rights to write to your iCloud Database."
+            case .temporarilyUnavailable:
+                description = "An unknown issue occurred while trying to access your iCloud account."
             @unknown default:
                 description = "An unknown issue occurred while trying to access your iCloud account."
             }
@@ -167,7 +172,7 @@ open class ADiCloudProvider {
             if let error = error {
                 // Unable to check status
                 cloudKitAccountStatus = .couldNotDetermine
-                print("Unable to determine the user's CloudKit account status: \(error)")
+                Log.error(subsystem: "ADiCloudProvider", category: "CloudKit", "Unable to determine the user's CloudKit account status: \(error)")
             } else {
                 // Save status
                 cloudKitAccountStatus = accountStatus
@@ -180,6 +185,8 @@ open class ADiCloudProvider {
                 description = "You must be logged into an iCloud account in Settings before \(appName) can save, load or delete items."
             case .restricted:
                 description = "Your iCloud account doesn't have the required rights to write to your iCloud Database."
+            case .temporarilyUnavailable:
+                description = "An unknown issue occurred while trying to access your CloudKit database: \(dbError)"
             @unknown default:
                 description = "An unknown issue occurred while trying to access your CloudKit database: \(dbError)"
             }
@@ -256,7 +263,7 @@ open class ADiCloudProvider {
             if let error = error {
                 // Unable to check status
                 self?.cloudKitAccountStatus = .couldNotDetermine
-                print("Unable to determine the user's CloudKit account status: \(error)")
+                Log.error(subsystem: "ADiCloudProvider", category: "init", "Unable to determine the user's CloudKit account status: \(error)")
             } else {
                 // Save status
                 self?.cloudKitAccountStatus = accountStatus
@@ -546,14 +553,14 @@ open class ADiCloudProvider {
         do {
             try save(instance) { record, error in
                 if let error = error {
-                    print("Registration Failed: \(error)")
+                    Log.error(subsystem: "ADiCloudProvider", category: "registerTableSchema", "Registration Failed: \(error)")
                 } else {
                     
                 }
             }
         } catch {
             // Report error
-            print(error)
+            Log.error(subsystem: "ADiCloudProvider", category: "registerTableSchema", "Registration Failed: \(error)")
         }
     }
     
@@ -621,7 +628,7 @@ open class ADiCloudProvider {
                             handler(record, error)
                         } else {
                             // Report error
-                            print("Unable to save record to \(baseType.tableName): \(error)")
+                            Log.error(subsystem: "ADiCloudProvider", category: "save", "Unable to save record to \(baseType.tableName): \(error)")
                         }
                     }
                 }
@@ -650,7 +657,7 @@ open class ADiCloudProvider {
                 handler(record, error)
             } else if let err = error {
                 // Report error
-                print("Unable to save record to \(tableName): \(err)")
+                Log.error(subsystem: "ADiCloudProvider", category: "save", "Unable to save record to \(tableName): \(err)")
             }
         }
     }
@@ -763,7 +770,7 @@ open class ADiCloudProvider {
                         handler(recordID, error)
                     } else if let err = error {
                         // Report error
-                        print("Unable to delete `\(cloudkitKey)` to \(baseType.tableName): \(err)")
+                        Log.error(subsystem: "ADiCloudProvider", category: "delete", "Unable to delete `\(cloudkitKey)` to \(baseType.tableName): \(err)")
                     }
                 }
             } else {
@@ -799,7 +806,7 @@ open class ADiCloudProvider {
                 handler(recordID, error)
             } else if let err = error {
                 // Report error
-                print(err)
+                Log.error(subsystem: "ADiCloudProvider", category: "delete", err.localizedDescription)
             }
         }
     }
@@ -962,7 +969,7 @@ open class ADiCloudProvider {
                     rows.append(item)
                 }
             } catch {
-                print("Error decoding CKRecord: \(error)")
+                Log.error(subsystem: "ADiCloudProvider", category: "getRows", "Error decoding CKRecord: \(error)")
             }
         }
         
@@ -1022,7 +1029,7 @@ open class ADiCloudProvider {
                     rows.append(item)
                 }
             } catch {
-                print("Error decoding CKRecord: \(error)")
+                Log.error(subsystem: "ADiCloudProvider", category: "getRemainingRows", "Error decoding CKRecord: \(error)")
             }
         }
         
