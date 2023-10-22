@@ -1,25 +1,23 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "LogManager",
-        "repositoryURL": "https://github.com/Appracatappra/LogManager",
-        "state": {
-          "branch": null,
-          "revision": "5dc038a098c8646e19f87424907e08b74809d06c",
-          "version": "1.0.1"
-        }
-      },
-      {
-        "package": "SwiftletUtilities",
-        "repositoryURL": "https://github.com/Appracatappra/SwiftletUtilities.git",
-        "state": {
-          "branch": null,
-          "revision": "0d8053e4e4d62f59402e1b23c4d49112a534ffb6",
-          "version": "1.1.2"
-        }
+  "pins" : [
+    {
+      "identity" : "logmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Appracatappra/LogManager",
+      "state" : {
+        "revision" : "aa1c1a9d15ea104a590df766af3f81da5afabab7",
+        "version" : "1.0.2"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "swiftletutilities",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Appracatappra/SwiftletUtilities.git",
+      "state" : {
+        "revision" : "7cc84ffb53bc9886b51c0bf2de3d308dd64a71cd",
+        "version" : "1.1.7"
+      }
+    }
+  ],
+  "version" : 2
 }
