@@ -1,6 +1,6 @@
 # ``SwiftletData``
 
-Swiftlet Data is a suite of backend tools designed to quickly and easily add support for several common databases and data formats (such as SQLite, SPON and CloudKit) to your app.
+**Swiftlet Data** is a suite of backend tools designed to quickly and easily add support for several common databases and data formats (such as **SQLite**, **SPON** and **CloudKit**) to your app.
 
 ## Overview
 
@@ -35,7 +35,7 @@ let category = Category(...)
 ADiCloudProvider.sharedPublic.save(category)
 ```
 
-### Action Codable
+## Action Codable
  
 **Action Codable** controls provide support for several common databases and data formats such as **SQLite**, **SPON** and **CloudKit** using Swift's `Codable`, `Encodable` and `Decodable` protocols to move information between your data models and our portable `ADRecord` and `ADRecordSet` formats.
  
@@ -49,9 +49,9 @@ import SwiftletData
 class Category: ADDataTable {
     
     enum CategoryType: String, Codable {
-        case local
-        case web
-    }
+	    case local
+	    case web
+	}
     
     static var tableName = "Categories"
     static var primaryKey = "id"
@@ -185,7 +185,8 @@ The **Swiftlet Data Providers** are designed to be interchangeable, so you can s
 
 Additionally, **Swiftlet Data Providers** can be used to move data from one source to another. For example, download data from the web in JSON  and save it to a local SQLite database using a `ADSQLiteProvider`, all with a minimal of code.
 
-### Action SQL Parser
+
+## Action SQL Parser
 
 The `ADSQLParser` provides the ability to parse text containing one or more SQL commands into an **Swiftlet Data SQL Document Object Model** (DOM) and is used to provide SQL support for data sources that don't support SQL natively (such as **CloudKit**).
 
@@ -195,9 +196,9 @@ The `ADSQLParser` uses SQLite's SQL syntax and currently support a subset of the
 let sql = """
 CREATE TABLE IF NOT EXISTS parts
 (
-    part_id           INTEGER   PRIMARY KEY,
-    stock             INTEGER   DEFAULT 0   NOT NULL,
-    description       TEXT      CHECK( description != '' )    -- empty strings not allowed
+	part_id           INTEGER   PRIMARY KEY,
+	stock             INTEGER   DEFAULT 0   NOT NULL,
+	description       TEXT      CHECK( description != '' )    -- empty strings not allowed
 );
 """
 

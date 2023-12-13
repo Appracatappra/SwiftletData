@@ -1,6 +1,6 @@
 # Swiftlet Data for Swift and SwiftUI
 
-![](https://img.shields.io/badge/license-MIT-green) ![](https://img.shields.io/badge/maintained%3F-Yes-green) ![](https://img.shields.io/badge/swift-5.4-green) ![](https://img.shields.io/badge/iOS-13.0-red) ![](https://img.shields.io/badge/macOS-10.15-red) ![](https://img.shields.io/badge/tvOS-13.0-red) ![](https://img.shields.io/badge/watchOS-6.0-red) ![](https://img.shields.io/badge/release-v1.0.11-blue)
+![](https://img.shields.io/badge/license-MIT-green) ![](https://img.shields.io/badge/maintained%3F-Yes-green) ![](https://img.shields.io/badge/swift-5.4-green) ![](https://img.shields.io/badge/iOS-17.0-red) ![](https://img.shields.io/badge/macOS-14.0-red) ![](https://img.shields.io/badge/tvOS-17.0-red) ![](https://img.shields.io/badge/watchOS-10.0-red) ![](https://img.shields.io/badge/dependency-LogManager-orange) ![](https://img.shields.io/badge/dependency-SwiftletUtilities-orange)
 
 **Swiftlet Data** is a suite of backend tools designed to quickly and easily add support for several common databases and data formats (such as **SQLite**, **SPON** and **CloudKit**) to your app.
 
@@ -42,7 +42,7 @@ ADiCloudProvider.sharedPublic.save(category)
 
 **Swift Package Manager** (Xcode 11 and above)
 
-1. Select **File** > **Swift Packages** > **Add Package Dependency…** from the **File** menu.
+1. In Xcode, select the **File** > **Add Package Dependency…** menu item.
 2. Paste `https://github.com/Appracatappra/SwiftletData.git` in the dialog box.
 3. Follow the Xcode's instruction to complete the installation.
 
@@ -233,3 +233,7 @@ CREATE TABLE IF NOT EXISTS parts
 let instructions = try ADSQLParser.parse(sql)
 print(instructions)
 ```
+
+# Documentation
+
+The **Package** includes full **DocC Documentation** for all features.
