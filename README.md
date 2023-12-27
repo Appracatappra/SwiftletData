@@ -6,6 +6,31 @@
 
  > NOTE: **Swiftlet Data** is a replacement for our [Action Data](https://github.com/Appracatappra/ActionData) library specifically designed to work with **SwiftUI**. Several other features have been modernized and improved as well.
 
+## Support
+
+If you find `SwiftletData` useful and would like to help support its continued development and maintenance, please consider making a small donation, especially if you are using it in a commercial product:
+
+<a href="https://www.buymeacoffee.com/KevinAtAppra" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+It's through the support of contributors like yourself, I can continue to build, release and maintain high-quality, well documented Swift Packages like `SwiftletData` for free.
+
+<a name="Installation"></a>
+## Installation
+
+**Swift Package Manager** (Xcode 11 and above)
+
+1. In Xcode, select the **File** > **Add Package Dependency…** menu item.
+2. Paste `https://github.com/Appracatappra/SwiftletData.git` in the dialog box.
+3. Follow the Xcode's instruction to complete the installation.
+
+> Why not CocoaPods, or Carthage, or blank?
+
+Supporting multiple dependency managers makes maintaining a library exponentially more complicated and time consuming.
+
+Since, the **Swift Package Manager** is integrated with Xcode 11 (and greater), it's the easiest choice to support going further.
+
+## Overview
+
 **Swiftlet Data** provides both light weight, low-level access to the data sources along with high level **Object Relationship Management** (ORM) support (using Swift's `Codable`, `Encodable` and `Decodable` protocols. 
 
 Simply create a `Class` to hold your data and conform it to `ADDataTable`. After you open a datasource from the required type of provider (**SQLite**, **iCloud** or **SPON**), use ORM functionality to quickly **Save**, **Update** or **Query** data. All without the overhead or hassle of having to learn **Core Data**.
@@ -36,21 +61,6 @@ let category = Category(...)
 // Save data to the public iCloud data store.
 ADiCloudProvider.sharedPublic.save(category)
 ```
-
-<a name="Installation"></a>
-## Installation
-
-**Swift Package Manager** (Xcode 11 and above)
-
-1. In Xcode, select the **File** > **Add Package Dependency…** menu item.
-2. Paste `https://github.com/Appracatappra/SwiftletData.git` in the dialog box.
-3. Follow the Xcode's instruction to complete the installation.
-
-> Why not CocoaPods, or Carthage, or blank?
-
-Supporting multiple dependency managers makes maintaining a library exponentially more complicated and time consuming.
-
-Since, the **Swift Package Manager** is integrated with Xcode 11 (and greater), it's the easiest choice to support going further.
 
 ## What's Included
 
