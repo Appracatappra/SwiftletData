@@ -1,0 +1,12 @@
+version: 1
+builder:
+  configs:
+  - platform: ios
+    scheme: SwiftletData
+  - platform: macos-xcodebuild
+    scheme: SwiftletData
+  - platform: tvos
+    scheme: SwiftletData
+  - platform: watchos
+    scheme: SwiftletData
+  - documentation_targets: [SwiftletData]
