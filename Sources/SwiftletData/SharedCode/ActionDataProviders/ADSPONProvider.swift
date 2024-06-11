@@ -212,7 +212,7 @@ open class ADSPONProvider: ADDataProvider {
         if fm.fileExists(atPath: path) {
             // Yes, open the database
             let url = URL(fileURLWithPath: path)
-            let spon = try String(contentsOf: url)
+            let spon = try String(contentsOf: url, encoding: .utf8)
             dataStore = ADDataStore(fromSPON: spon)
         }
         
@@ -276,7 +276,7 @@ open class ADSPONProvider: ADDataProvider {
             if fm.fileExists(atPath: path) {
                 // Yes, open the database
                 let url = URL(fileURLWithPath: path)
-                let spon = try String(contentsOf: url)
+                let spon = try String(contentsOf: url, encoding: .utf8)
                 dataStore = ADDataStore(fromSPON: spon)
             }
         }

@@ -889,21 +889,23 @@ open class ADiCloudProvider {
         }
         
         // Attempt to query database
-        iCloudDatabase?.perform(iCloudQuery, inZoneWith: nil) { [weak self] records, error in
-            // Process returned data
-            if let err = error {
-                // Encountered error, pass forward
-                completionHandler(nil, err)
-            } else if let records = records {
+        iCloudDatabase?.fetch(withQuery: iCloudQuery, inZoneWith: nil) { results in
+            switch results {
+            case .success(let data):
                 do {
                     var rows:[T] = []
                     
                     // Process all rows
                     let decoder = ADSQLDecoder()
-                    for record in records {
-                        if let data = try self?.buildADRecord(from: record) {
+                    for (_, recordResult) in data.matchResults {
+                        switch recordResult {
+                        case .success(let record):
+                            let data = try self.buildADRecord(from: record)
                             let item = try decoder.decode(type, from: data)
                             rows.append(item)
+                        case .failure(let error):
+                            // Encountered error, pass forward
+                            completionHandler(nil, error)
                         }
                     }
                     
@@ -913,12 +915,11 @@ open class ADiCloudProvider {
                     // Encountered error, pass forward
                     completionHandler(nil, error)
                 }
-            } else {
-                // Not found
-                completionHandler(nil, ADSQLExecutionError.noRowsReturned(message: "No rows found matching query."))
+            case .failure(let error):
+                // Encountered error, pass forward
+                completionHandler(nil, error)
             }
         }
-        
     }
     
     /**
@@ -961,25 +962,29 @@ open class ADiCloudProvider {
         continuationLimit = limit
         
         // Handle a record being returned
-        operation.recordFetchedBlock = { [weak self] record in
-            //print("Record fetched")
-            do {
-                if let data = try self?.buildADRecord(from: record) {
-                    let item = try decoder.decode(type, from: data)
-                    rows.append(item)
-                }
-            } catch {
+        operation.recordMatchedBlock = { [weak self] recordId, results in
+            switch results {
+            case .failure(let error):
                 Log.error(subsystem: "ADiCloudProvider", category: "getRows", "Error decoding CKRecord: \(error)")
+            case .success(let record):
+                do {
+                    if let data = try self?.buildADRecord(from: record) {
+                        let item = try decoder.decode(type, from: data)
+                        rows.append(item)
+                    }
+                } catch {
+                    Log.error(subsystem: "ADiCloudProvider", category: "getRows", "Error decoding CKRecord: \(error)")
+                }
             }
         }
         
         // Handle the query completing
-        operation.queryCompletionBlock = { [weak self] (cursor, error) in
-            //print("Completing query with results: \(cursor) - \(error)")
-            if let error = error {
+        operation.queryResultBlock = {[weak self] results in
+            switch results {
+            case .failure(let error):
                 // Pass error on to handler
                 completionHandler(nil, error)
-            } else {
+            case .success(let cursor):
                 // Save continuation cursor
                 self?.continuationCursor = cursor
                 
@@ -1022,23 +1027,29 @@ open class ADiCloudProvider {
         operation.resultsLimit = continuationLimit
         
         // Handle a record being returned
-        operation.recordFetchedBlock = { [weak self] record in
-            do {
-                if let data = try self?.buildADRecord(from: record) {
-                    let item = try decoder.decode(type, from: data)
-                    rows.append(item)
-                }
-            } catch {
+        operation.recordMatchedBlock = { [weak self] recordId, results in
+            switch results {
+            case .failure(let error):
                 Log.error(subsystem: "ADiCloudProvider", category: "getRemainingRows", "Error decoding CKRecord: \(error)")
+            case .success(let record):
+                do {
+                    if let data = try self?.buildADRecord(from: record) {
+                        let item = try decoder.decode(type, from: data)
+                        rows.append(item)
+                    }
+                } catch {
+                    Log.error(subsystem: "ADiCloudProvider", category: "getRemainingRows", "Error decoding CKRecord: \(error)")
+                }
             }
         }
         
         // Handle the query completing
-        operation.queryCompletionBlock = { [weak self] (cursor, error) in
-            if let error = error {
+        operation.queryResultBlock = {[weak self] results in
+            switch results {
+            case .failure(let error):
                 // Pass error on to handler
                 completionHandler(nil, error)
-            } else {
+            case .success(let cursor):
                 // Save continuation cursor
                 self?.continuationCursor = cursor
                 
@@ -1046,6 +1057,7 @@ open class ADiCloudProvider {
                 completionHandler(rows, nil)
             }
         }
+        
         
         // Execute the query
         iCloudDatabase?.add(operation)
