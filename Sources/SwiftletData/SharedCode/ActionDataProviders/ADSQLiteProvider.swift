@@ -51,7 +51,7 @@ open class ADSQLiteProvider: ADDataProvider {
    
     // MARK: - Static Properties
     /// Provides access to a common, shared instance of the `ADSQLiteProvider`. For app's that are working with a single SQLite database, they can use this instance instead of creating their own instance of a `ADSQLiteProvider`.
-    public static let shared = ADSQLiteProvider()
+    nonisolated(unsafe) public static let shared = ADSQLiteProvider()
     
     // MARK: - Private Properties
     /// Internal name for GCD queue used to execute SQL commands so that all commands are executed sequentially.

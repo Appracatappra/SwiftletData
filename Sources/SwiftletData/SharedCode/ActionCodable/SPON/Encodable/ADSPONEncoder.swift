@@ -89,7 +89,7 @@ public class ADSPONEncoder: Encoder {
     // MARK: - Class Functions
     /// Shared formatter used to encode a `Date` as an ISO-8601-formatted string (in RFC 3339 format).
     @available(OSX 10.12, iOS 10.0, watchOS 3.0, tvOS 10.0, *)
-    public static var iso8601Formatter: ISO8601DateFormatter = {
+    nonisolated(unsafe) public static let iso8601Formatter: ISO8601DateFormatter = {
         let formatter = ISO8601DateFormatter()
         formatter.formatOptions = .withInternetDateTime
         return formatter

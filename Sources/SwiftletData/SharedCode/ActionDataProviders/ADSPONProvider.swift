@@ -38,7 +38,7 @@ open class ADSPONProvider: ADDataProvider {
     
     // MARK: - Static Properties
     /// Provides access to a common, shared instance of the `ADSPONProvider`. For app's that are working with a single SPON database, they can use this instance instead of creating their own instance of a `ADSPONProvider`.
-    public static let shared = ADSPONProvider()
+    nonisolated(unsafe) public static let shared = ADSPONProvider()
     
     // MARK: - Private Properties
     /// Internal name for GCD queue used to execute SQL commands so that all commands are executed sequentially.

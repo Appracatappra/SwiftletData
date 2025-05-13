@@ -66,7 +66,7 @@ open class ADiCloudProvider {
     
     // MARK: - Static Properties
     // Holds the last stated access to cloudkit
-    private static var cloudKitAccountStatus:CKAccountStatus = .couldNotDetermine
+    nonisolated(unsafe) private static var cloudKitAccountStatus:CKAccountStatus = .couldNotDetermine
     
     /// If `true` CloudKit is available, else it isn't.
     public var isCloudKitAvailable:Bool {
@@ -201,10 +201,10 @@ open class ADiCloudProvider {
     
     // MARK: - Static Properties
     /// Provides access to a common, shared instance of the `ADiCloudProvider`. For app's that are working with a single private iCloud database, they can use this instance instead of creating their own instance of a `ADiCloudProvider`.
-    public static let shared = ADiCloudProvider()
+    nonisolated(unsafe) public static let shared = ADiCloudProvider()
     
     /// Provides access to a common, shared instance of the `ADiCloudProvider`. For app's that are working with a single public iCloud database, they can use this instance instead of creating their own instance of a `ADiCloudProvider`.
-    public static let sharedPublic = ADiCloudProvider()
+    nonisolated(unsafe) public static let sharedPublic = ADiCloudProvider()
     
     /**
      The current value of an auto incrementing integer key used for CloudKit records.

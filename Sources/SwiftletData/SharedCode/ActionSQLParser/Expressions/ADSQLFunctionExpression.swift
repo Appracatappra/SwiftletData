@@ -13,7 +13,7 @@ public class ADSQLFunctionExpression: ADSQLExpression {
     
     // MARK: - Static Properties
     /// If `true` and the function is an aggregate function, the function is in the accumulation pass where it is accumulating values. If `false` the function will simply report the values acquired in the accumulation pass.
-    public static var accumulate = true
+    nonisolated(unsafe) public static var accumulate = true
     
     // MARK: - Private properties
     private var maxValue: Float = 0.0

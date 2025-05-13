@@ -33,7 +33,7 @@ class ADSQLParseQueue {
     
     // MARK: Static Properties
     /// A common, shared instance of the `ADSQLParseQueue` used across object instances.
-    static var shared = ADSQLParseQueue()
+    nonisolated(unsafe) static let shared = ADSQLParseQueue()
     
     // MARK: - Properties
     /// An array of the decomposed parts of the SQL string
