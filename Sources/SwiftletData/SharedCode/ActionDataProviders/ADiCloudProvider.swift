@@ -116,7 +116,7 @@ open class ADiCloudProvider {
          - action: The action that was trying to be performed.
          - showMessage: The closure to handle showing the alert to the user.
      */
-    public static func ShowCloudKitAccessAlert(appName:String, for action:String, showMessage: @escaping (String, String)-> Void) {
+    public static func ShowCloudKitAccessAlert(appName:String, for action:String, showMessage: @Sendable @escaping (String, String)-> Void) {
 
         // Attempt to get the CloudKit account status.
         CKContainer.default().accountStatus { (accountStatus, error) in
@@ -162,7 +162,7 @@ open class ADiCloudProvider {
          - dbError: The Error that was initially thrown.
          - showMessage: The closure to handle showing the alert to the user.
     */
-    public static func showCloudKitErrorAlert(appName:String, for action:String, with dbError:Error, showMessage: @escaping (String, String)-> Void) {
+    public static func showCloudKitErrorAlert(appName:String, for action:String, with dbError:Error, showMessage: @Sendable @escaping (String, String)-> Void) {
         
         // Attempt to get the CloudKit account status.
         CKContainer.default().accountStatus { (accountStatus, error) in

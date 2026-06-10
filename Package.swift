@@ -1,11 +1,11 @@
-// swift-tools-version:6.1
+// swift-tools-version:6.4
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "SwiftletData",
-    platforms: [.iOS(.v18), .macOS(.v15), .tvOS(.v18), .watchOS(.v11)],
+    platforms: [.iOS(.v26), .macOS(.v26), .tvOS(.v26), .watchOS(.v26)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
